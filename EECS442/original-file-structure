@@ -1,0 +1,2767 @@
+.
+├── hw0
+│   ├── dither
+│   │   ├── bbb
+│   │   │   ├── bbbin
+│   │   │   │   └── bbb.jpg
+│   │   │   ├── bbbout
+│   │   │   │   ├── quantizeFloydGamma_0_200.png
+│   │   │   │   ├── quantizeFloydGamma_0_300.png
+│   │   │   │   ├── quantizeFloydGamma_0_500.png
+│   │   │   │   ├── quantizeFloydGamma_1_200.png
+│   │   │   │   ├── quantizeFloydGamma_1_300.png
+│   │   │   │   ├── quantizeFloydGamma_1_500.png
+│   │   │   │   ├── quantizeFloyd_0_200.png
+│   │   │   │   ├── quantizeFloyd_0_300.png
+│   │   │   │   ├── quantizeFloyd_0_500.png
+│   │   │   │   ├── quantizeFloyd_1_200.png
+│   │   │   │   ├── quantizeFloyd_1_300.png
+│   │   │   │   ├── quantizeFloyd_1_500.png
+│   │   │   │   ├── quantizeNaive_0_200.png
+│   │   │   │   ├── quantizeNaive_0_300.png
+│   │   │   │   ├── quantizeNaive_0_500.png
+│   │   │   │   ├── quantizeNaive_1_200.png
+│   │   │   │   ├── quantizeNaive_1_300.png
+│   │   │   │   └── quantizeNaive_1_500.png
+│   │   │   └── view.htm
+│   │   ├── credits.txt
+│   │   ├── dither.py
+│   │   ├── gallery
+│   │   │   ├── aep.jpg
+│   │   │   ├── babyhippo.jpg
+│   │   │   ├── cosmos.jpg
+│   │   │   ├── cossacks.jpg
+│   │   │   ├── david.jpg
+│   │   │   ├── ditherdog.jpg
+│   │   │   ├── eveningbells.jpg
+│   │   │   ├── evenmoremoore.jpg
+│   │   │   ├── goldenautumn.jpg
+│   │   │   ├── grace_600.jpg
+│   │   │   ├── hepworth.jpg
+│   │   │   ├── koyaanisqatsi.jpg
+│   │   │   ├── koyaanisqatsi2.jpg
+│   │   │   ├── moremoore.jpg
+│   │   │   ├── priory.jpg
+│   │   │   ├── quokka.jpg
+│   │   │   ├── rooks.jpg
+│   │   │   ├── roomsbythesea.jpg
+│   │   │   ├── threepiece.jpg
+│   │   │   └── vladimirka.jpg
+│   │   ├── gallery200
+│   │   │   ├── aep.jpg
+│   │   │   ├── babyhippo.jpg
+│   │   │   ├── cosmos.jpg
+│   │   │   ├── cossacks.jpg
+│   │   │   ├── david.jpg
+│   │   │   ├── ditherdog.jpg
+│   │   │   ├── eveningbells.jpg
+│   │   │   ├── evenmoremoore.jpg
+│   │   │   ├── goldenautumn.jpg
+│   │   │   ├── grace_600.jpg
+│   │   │   ├── hepworth.jpg
+│   │   │   ├── koyaanisqatsi.jpg
+│   │   │   ├── koyaanisqatsi2.jpg
+│   │   │   ├── moremoore.jpg
+│   │   │   ├── priory.jpg
+│   │   │   ├── quokka.jpg
+│   │   │   ├── rooks.jpg
+│   │   │   ├── roomsbythesea.jpg
+│   │   │   ├── threepiece.jpg
+│   │   │   └── vladimirka.jpg
+│   │   └── results
+│   │       ├── aep.jpg_orig.png
+│   │       ├── aep.jpg_quantizeFloyd.png
+│   │       ├── aep.jpg_quantizeNaive.png
+│   │       ├── babyhippo.jpg_orig.png
+│   │       ├── babyhippo.jpg_quantizeFloyd.png
+│   │       ├── babyhippo.jpg_quantizeNaive.png
+│   │       ├── cosmos.jpg_orig.png
+│   │       ├── cosmos.jpg_quantizeFloyd.png
+│   │       ├── cosmos.jpg_quantizeNaive.png
+│   │       ├── cossacks.jpg_orig.png
+│   │       ├── cossacks.jpg_quantizeFloyd.png
+│   │       ├── cossacks.jpg_quantizeNaive.png
+│   │       ├── david.jpg_orig.png
+│   │       ├── david.jpg_quantizeFloyd.png
+│   │       ├── david.jpg_quantizeNaive.png
+│   │       ├── ditherdog.jpg_orig.png
+│   │       ├── ditherdog.jpg_quantizeFloyd.png
+│   │       ├── ditherdog.jpg_quantizeNaive.png
+│   │       ├── eveningbells.jpg_orig.png
+│   │       ├── eveningbells.jpg_quantizeFloyd.png
+│   │       ├── eveningbells.jpg_quantizeNaive.png
+│   │       ├── evenmoremoore.jpg_orig.png
+│   │       ├── evenmoremoore.jpg_quantizeFloyd.png
+│   │       ├── evenmoremoore.jpg_quantizeNaive.png
+│   │       ├── goldenautumn.jpg_orig.png
+│   │       ├── goldenautumn.jpg_quantizeFloyd.png
+│   │       ├── goldenautumn.jpg_quantizeNaive.png
+│   │       ├── grace_600.jpg_orig.png
+│   │       ├── grace_600.jpg_quantizeFloyd.png
+│   │       ├── grace_600.jpg_quantizeNaive.png
+│   │       ├── hepworth.jpg_orig.png
+│   │       ├── hepworth.jpg_quantizeFloyd.png
+│   │       ├── hepworth.jpg_quantizeNaive.png
+│   │       ├── koyaanisqatsi.jpg_orig.png
+│   │       ├── koyaanisqatsi.jpg_quantizeFloyd.png
+│   │       ├── koyaanisqatsi.jpg_quantizeNaive.png
+│   │       ├── koyaanisqatsi2.jpg_orig.png
+│   │       ├── koyaanisqatsi2.jpg_quantizeFloyd.png
+│   │       ├── koyaanisqatsi2.jpg_quantizeNaive.png
+│   │       ├── moremoore.jpg_orig.png
+│   │       ├── moremoore.jpg_quantizeFloyd.png
+│   │       ├── moremoore.jpg_quantizeNaive.png
+│   │       ├── priory.jpg_orig.png
+│   │       ├── priory.jpg_quantizeFloyd.png
+│   │       ├── priory.jpg_quantizeNaive.png
+│   │       ├── quokka.jpg_orig.png
+│   │       ├── quokka.jpg_quantizeFloyd.png
+│   │       ├── quokka.jpg_quantizeNaive.png
+│   │       ├── rooks.jpg_orig.png
+│   │       ├── rooks.jpg_quantizeFloyd.png
+│   │       ├── rooks.jpg_quantizeNaive.png
+│   │       ├── roomsbythesea.jpg_orig.png
+│   │       ├── roomsbythesea.jpg_quantizeFloyd.png
+│   │       ├── roomsbythesea.jpg_quantizeNaive.png
+│   │       ├── threepiece.jpg_orig.png
+│   │       ├── threepiece.jpg_quantizeFloyd.png
+│   │       ├── threepiece.jpg_quantizeNaive.png
+│   │       ├── view.html
+│   │       ├── vladimirka.jpg_orig.png
+│   │       ├── vladimirka.jpg_quantizeFloyd.png
+│   │       └── vladimirka.jpg_quantizeNaive.png
+│   ├── hw0.pdf
+│   ├── mytst.py
+│   ├── numpy
+│   │   ├── 442solutions
+│   │   │   ├── c1.npz
+│   │   │   ├── c2.npz
+│   │   │   ├── c3.npz
+│   │   │   ├── c4.npz
+│   │   │   ├── t1.npz
+│   │   │   ├── t10.npz
+│   │   │   ├── t11.npz
+│   │   │   ├── t12.npz
+│   │   │   ├── t13.npz
+│   │   │   ├── t14.npz
+│   │   │   ├── t15.npz
+│   │   │   ├── t16.npz
+│   │   │   ├── t17.npz
+│   │   │   ├── t18.npz
+│   │   │   ├── t19.npz
+│   │   │   ├── t2.npz
+│   │   │   ├── t20.npz
+│   │   │   ├── t3.npz
+│   │   │   ├── t4.npz
+│   │   │   ├── t5.npz
+│   │   │   ├── t6.npz
+│   │   │   ├── t7.npz
+│   │   │   ├── t8.npz
+│   │   │   ├── t9.npz
+│   │   │   ├── w1.npz
+│   │   │   ├── w10.npz
+│   │   │   ├── w11.npz
+│   │   │   ├── w12.npz
+│   │   │   ├── w13.npz
+│   │   │   ├── w14.npz
+│   │   │   ├── w15.npz
+│   │   │   ├── w16.npz
+│   │   │   ├── w17.npz
+│   │   │   ├── w18.npz
+│   │   │   ├── w19.npz
+│   │   │   ├── w2.npz
+│   │   │   ├── w20.npz
+│   │   │   ├── w3.npz
+│   │   │   ├── w4.npz
+│   │   │   ├── w5.npz
+│   │   │   ├── w6.npz
+│   │   │   ├── w7.npz
+│   │   │   ├── w8.npz
+│   │   │   └── w9.npz
+│   │   ├── __pycache__
+│   │   │   ├── common.cpython-39.pyc
+│   │   │   ├── tests.cpython-39.pyc
+│   │   │   └── warmups.cpython-39.pyc
+│   │   ├── common.py
+│   │   ├── common.pyc
+│   │   ├── run.py
+│   │   ├── tests.py
+│   │   ├── tests.pyc
+│   │   ├── warmups.py
+│   │   └── warmups.pyc
+│   └── visualize
+│       ├── credits.txt
+│       ├── mystery_visualize.py
+│       └── mysterydata
+│           ├── colors.npy
+│           ├── mysterydata.npy
+│           ├── mysterydata2.npy
+│           ├── mysterydata3.npy
+│           └── mysterydata4.npy
+├── hw1
+│   ├── __pycache__
+│   │   └── util.cpython-39.pyc
+│   ├── cube.gif
+│   ├── cube1.gif
+│   ├── cube2.gif
+│   ├── hw1.pdf
+│   ├── main.py
+│   ├── prokudin-gorskii
+│   │   ├── 00125v.jpg
+│   │   ├── 00149v.jpg
+│   │   ├── 00153v.jpg
+│   │   ├── 00153v_B.jpg
+│   │   ├── 00153v_G.jpg
+│   │   ├── 00153v_R.jpg
+│   │   ├── 00153v_ncc.jpg
+│   │   ├── 00153v_trivial.jpg
+│   │   ├── 00351v.jpg
+│   │   ├── 00398v.jpg
+│   │   ├── 01112v.jpg
+│   │   ├── cube1.gif
+│   │   ├── cube2.gif
+│   │   ├── rbg.py
+│   │   ├── rgb_00125v.jpg
+│   │   ├── rgb_00149v.jpg
+│   │   ├── rgb_00153v.jpg
+│   │   ├── rgb_00351v.jpg
+│   │   ├── rgb_00398v.jpg
+│   │   └── rgb_01112v.jpg
+│   ├── rubik
+│   │   ├── indoor.png
+│   │   ├── indoor_B.png
+│   │   ├── indoor_G.png
+│   │   ├── indoor_R.png
+│   │   ├── indoor_lab_L.png
+│   │   ├── indoor_lab_a.png
+│   │   ├── indoor_lab_b.png
+│   │   ├── outdoor.png
+│   │   ├── outdoor_B.png
+│   │   ├── outdoor_G.png
+│   │   ├── outdoor_R.png
+│   │   ├── outdoor_lab_L.png
+│   │   ├── outdoor_lab_a.png
+│   │   └── outdoor_lab_b.png
+│   ├── tableau
+│   │   ├── efros_tableau.jpg
+│   │   ├── seoul_tableau.jpg
+│   │   └── vancouver_tableau.jpg
+│   ├── tempCodeRunnerFile.py
+│   └── util.py
+├── hw2
+│   ├── __pycache__
+│   │   └── common.cpython-39.pyc
+│   ├── blob_detection.py
+│   ├── cell_detections
+│   ├── cells
+│   │   ├── 001cell.png
+│   │   ├── 002cell.png
+│   │   ├── 004cell.png
+│   │   ├── 005cell.png
+│   │   ├── 006cell.png
+│   │   ├── 007cell.png
+│   │   ├── 008cell.png
+│   │   ├── 009cell.png
+│   │   ├── 010cell.png
+│   │   ├── 011cell.png
+│   │   ├── 012cell.png
+│   │   ├── 013cell.png
+│   │   ├── 014cell.png
+│   │   ├── 015cell.png
+│   │   ├── 016cell.png
+│   │   ├── 017cell.png
+│   │   ├── 018cell.png
+│   │   ├── 019cell.png
+│   │   ├── 020cell.png
+│   │   ├── 021cell.png
+│   │   ├── 022cell.png
+│   │   ├── 023cell.png
+│   │   ├── 024cell.png
+│   │   ├── 025cell.png
+│   │   ├── 026cell.png
+│   │   ├── 027cell.png
+│   │   ├── 028cell.png
+│   │   ├── 029cell.png
+│   │   ├── 030cell.png
+│   │   ├── 031cell.png
+│   │   ├── 032cell.png
+│   │   ├── 033cell.png
+│   │   ├── 034cell.png
+│   │   ├── 035cell.png
+│   │   ├── 036cell.png
+│   │   ├── 037cell.png
+│   │   ├── 038cell.png
+│   │   ├── 039cell.png
+│   │   ├── 040cell.png
+│   │   ├── 041cell.png
+│   │   ├── 042cell.png
+│   │   ├── 043cell.png
+│   │   ├── 044cell.png
+│   │   ├── 045cell.png
+│   │   ├── 046cell.png
+│   │   ├── 047cell.png
+│   │   ├── 048cell.png
+│   │   ├── 049cell.png
+│   │   ├── 050cell.png
+│   │   ├── 051cell.png
+│   │   ├── 052cell.png
+│   │   ├── 053cell.png
+│   │   ├── 054cell.png
+│   │   ├── 055cell.png
+│   │   ├── 056cell.png
+│   │   ├── 057cell.png
+│   │   ├── 058cell.png
+│   │   ├── 059cell.png
+│   │   ├── 060cell.png
+│   │   ├── 061cell.png
+│   │   ├── 062cell.png
+│   │   ├── 063cell.png
+│   │   ├── 064cell.png
+│   │   ├── 065cell.png
+│   │   ├── 066cell.png
+│   │   ├── 067cell.png
+│   │   ├── 068cell.png
+│   │   ├── 069cell.png
+│   │   ├── 070cell.png
+│   │   ├── 071cell.png
+│   │   ├── 072cell.png
+│   │   ├── 073cell.png
+│   │   ├── 074cell.png
+│   │   ├── 075cell.png
+│   │   ├── 076cell.png
+│   │   ├── 077cell.png
+│   │   ├── 078cell.png
+│   │   ├── 079cell.png
+│   │   ├── 080cell.png
+│   │   ├── 081cell.png
+│   │   ├── 082cell.png
+│   │   ├── 083cell.png
+│   │   ├── 084cell.png
+│   │   ├── 085cell.png
+│   │   ├── 086cell.png
+│   │   ├── 087cell.png
+│   │   ├── 088cell.png
+│   │   ├── 089cell.png
+│   │   ├── 090cell.png
+│   │   ├── 091cell.png
+│   │   ├── 092cell.png
+│   │   ├── 093cell.png
+│   │   ├── 094cell.png
+│   │   ├── 095cell.png
+│   │   ├── 096cell.png
+│   │   ├── 097cell.png
+│   │   ├── 098cell.png
+│   │   ├── 099cell.png
+│   │   ├── 100cell.png
+│   │   ├── 101cell.png
+│   │   ├── 102cell.png
+│   │   ├── 103cell.png
+│   │   ├── 104cell.png
+│   │   ├── 105cell.png
+│   │   ├── 106cell.png
+│   │   ├── 107cell.png
+│   │   ├── 108cell.png
+│   │   ├── 109cell.png
+│   │   ├── 110cell.png
+│   │   ├── 111cell.png
+│   │   ├── 112cell.png
+│   │   ├── 113cell.png
+│   │   ├── 114cell.png
+│   │   ├── 115cell.png
+│   │   ├── 116cell.png
+│   │   ├── 117cell.png
+│   │   ├── 118cell.png
+│   │   ├── 119cell.png
+│   │   ├── 120cell.png
+│   │   ├── 121cell.png
+│   │   ├── 122cell.png
+│   │   ├── 123cell.png
+│   │   ├── 124cell.png
+│   │   ├── 125cell.png
+│   │   ├── 126cell.png
+│   │   ├── 127cell.png
+│   │   ├── 128cell.png
+│   │   ├── 129cell.png
+│   │   ├── 130cell.png
+│   │   ├── 131cell.png
+│   │   ├── 132cell.png
+│   │   ├── 133cell.png
+│   │   ├── 134cell.png
+│   │   ├── 135cell.png
+│   │   ├── 136cell.png
+│   │   ├── 137cell.png
+│   │   ├── 138cell.png
+│   │   ├── 139cell.png
+│   │   ├── 140cell.png
+│   │   ├── 141cell.png
+│   │   ├── 142cell.png
+│   │   ├── 143cell.png
+│   │   ├── 144cell.png
+│   │   ├── 145cell.png
+│   │   ├── 146cell.png
+│   │   ├── 147cell.png
+│   │   ├── 148cell.png
+│   │   ├── 149cell.png
+│   │   ├── 150cell.png
+│   │   ├── 151cell.png
+│   │   ├── 152cell.png
+│   │   ├── 153cell.png
+│   │   ├── 154cell.png
+│   │   ├── 155cell.png
+│   │   ├── 156cell.png
+│   │   ├── 157cell.png
+│   │   ├── 158cell.png
+│   │   ├── 159cell.png
+│   │   ├── 160cell.png
+│   │   ├── 161cell.png
+│   │   ├── 162cell.png
+│   │   ├── 163cell.png
+│   │   ├── 164cell.png
+│   │   ├── 165cell.png
+│   │   ├── 166cell.png
+│   │   ├── 167cell.png
+│   │   ├── 168cell.png
+│   │   ├── 169cell.png
+│   │   ├── 170cell.png
+│   │   ├── 171cell.png
+│   │   ├── 172cell.png
+│   │   ├── 173cell.png
+│   │   ├── 174cell.png
+│   │   ├── 175cell.png
+│   │   ├── 176cell.png
+│   │   ├── 177cell.png
+│   │   ├── 178cell.png
+│   │   ├── 179cell.png
+│   │   ├── 180cell.png
+│   │   ├── 181cell.png
+│   │   ├── 182cell.png
+│   │   ├── 183cell.png
+│   │   ├── 184cell.png
+│   │   ├── 185cell.png
+│   │   ├── 186cell.png
+│   │   ├── 187cell.png
+│   │   ├── 188cell.png
+│   │   ├── 189cell.png
+│   │   ├── 190cell.png
+│   │   ├── 191cell.png
+│   │   ├── 192cell.png
+│   │   ├── 193cell.png
+│   │   ├── 194cell.png
+│   │   ├── 195cell.png
+│   │   ├── 196cell.png
+│   │   ├── 197cell.png
+│   │   ├── 198cell.png
+│   │   ├── 199cell.png
+│   │   └── 200cell.png
+│   ├── common.py
+│   ├── corners.py
+│   ├── feature_detection
+│   │   ├── corner_score.png
+│   │   ├── corner_score_-5_0.png
+│   │   ├── corner_score_0_-5.png
+│   │   ├── corner_score_0_5.png
+│   │   ├── corner_score_5_0.png
+│   │   ├── harris_response.png
+│   │   └── harris_response_heat.png
+│   ├── filters.py
+│   ├── gaussian_filter
+│   │   ├── q2_gaussian.png
+│   │   ├── q3_edge.png
+│   │   └── q3_edge_gaussian.png
+│   ├── grace_hopper.png
+│   ├── hw2.pdf
+│   ├── image_patches
+│   │   ├── q1_patch0.png
+│   │   ├── q1_patch1.png
+│   │   └── q1_patch2.png
+│   ├── log1d.npz
+│   ├── log_filter
+│   │   ├── dfilter_approx.png
+│   │   ├── q1_LoG1.png
+│   │   └── q1_LoG2.png
+│   ├── polka.png
+│   ├── polka_detections
+│   │   ├── polka_large.png
+│   │   ├── polka_large_DoG.png
+│   │   ├── polka_small.png
+│   │   └── polka_small_DoG.png
+│   ├── sobel_operator
+│   │   ├── q2_Gx.png
+│   │   ├── q2_Gy.png
+│   │   └── q2_edge_sobel.png
+│   └── tempCodeRunnerFile.py
+├── hw3
+│   ├── __pycache__
+│   │   ├── common.cpython-39.pyc
+│   │   └── homography.cpython-39.pyc
+│   ├── common.py
+│   ├── homography.py
+│   ├── hw3.pdf
+│   ├── result_eynsham.jpg
+│   ├── result_florence3.jpg
+│   ├── result_lowetag.jpg
+│   ├── result_mertonchapel.jpg
+│   ├── result_vgg.jpg
+│   ├── task3
+│   │   ├── data1.png
+│   │   ├── data2.png
+│   │   ├── points_case_1.npy
+│   │   ├── points_case_2.npy
+│   │   ├── task3.py
+│   │   └── tempCodeRunnerFile.py
+│   ├── task4
+│   │   ├── points_case_1.npy
+│   │   ├── points_case_1.png
+│   │   ├── points_case_2.npy
+│   │   ├── points_case_2.png
+│   │   ├── points_case_3.npy
+│   │   ├── points_case_3.png
+│   │   ├── points_case_4.npy
+│   │   ├── points_case_4.png
+│   │   ├── points_case_5.npy
+│   │   ├── points_case_5.png
+│   │   ├── points_case_6.npy
+│   │   ├── points_case_6.png
+│   │   ├── points_case_7.npy
+│   │   ├── points_case_7.png
+│   │   ├── points_case_8.npy
+│   │   ├── points_case_8.png
+│   │   ├── points_case_9.npy
+│   │   ├── points_case_9.png
+│   │   ├── task4.py
+│   │   └── tempCodeRunnerFile.py
+│   ├── task5
+│   │   ├── palmer
+│   │   │   ├── book.jpg
+│   │   │   ├── corners.npy
+│   │   │   └── size.npy
+│   │   └── threebody
+│   │       ├── book.jpg
+│   │       ├── corners.npy
+│   │       └── size.npy
+│   ├── task5.py
+│   ├── task6
+│   │   ├── eynsham
+│   │   │   ├── p1.jpg
+│   │   │   └── p2.jpg
+│   │   ├── florence2
+│   │   │   ├── p1.jpg
+│   │   │   └── p2.jpg
+│   │   ├── florence3
+│   │   │   ├── p1.jpg
+│   │   │   ├── p2.jpg
+│   │   │   ├── p3.jpg
+│   │   │   └── p4.jpg
+│   │   ├── florence3_alt
+│   │   │   ├── p1.jpg
+│   │   │   └── p2.jpg
+│   │   ├── lowetag
+│   │   │   ├── p1.jpg
+│   │   │   ├── p2.jpg
+│   │   │   └── p3.jpg
+│   │   ├── mertonchapel
+│   │   │   ├── p1.jpg
+│   │   │   └── p2.jpg
+│   │   ├── mertoncourtyard
+│   │   │   ├── p1.jpg
+│   │   │   └── p2.jpg
+│   │   └── vgg
+│   │       ├── p1.jpg
+│   │       └── p2.jpg
+│   ├── task6.py
+│   ├── task7
+│   │   ├── scenes
+│   │   │   ├── bbb
+│   │   │   │   ├── scene.jpg
+│   │   │   │   └── template.png
+│   │   │   ├── florence
+│   │   │   │   ├── scene.jpg
+│   │   │   │   └── template.png
+│   │   │   └── lacroix
+│   │   │       ├── scene.jpg
+│   │   │       └── template.png
+│   │   └── seals
+│   │       ├── michigan.png
+│   │       ├── monk.png
+│   │       └── um.png
+│   ├── task7.py
+│   ├── threebody_frontoparallel.jpg
+│   └── tst.png
+├── hw4
+│   ├── backprop
+│   │   ├── __pycache__
+│   │   │   └── functions.cpython-39.pyc
+│   │   ├── backprop-data.pkl
+│   │   ├── backprop.py
+│   │   └── functions.py
+│   ├── fitting
+│   │   ├── __pycache__
+│   │   │   ├── fitting.cpython-39.pyc
+│   │   │   └── utils.cpython-39.pyc
+│   │   ├── fitting.py
+│   │   ├── loss.gif
+│   │   ├── loss_plt.png
+│   │   ├── main.py
+│   │   ├── points_case_1.npy
+│   │   └── utils.py
+│   ├── hw4.pdf
+│   ├── neuralnet
+│   │   ├── __pycache__
+│   │   │   ├── classifier.cpython-39.pyc
+│   │   │   ├── data.cpython-39.pyc
+│   │   │   ├── layers.cpython-310.pyc
+│   │   │   ├── layers.cpython-39.pyc
+│   │   │   ├── linear_classifier.cpython-39.pyc
+│   │   │   ├── optim.cpython-39.pyc
+│   │   │   ├── two_layer_net.cpython-39.pyc
+│   │   │   ├── utils.cpython-310.pyc
+│   │   │   └── utils.cpython-39.pyc
+│   │   ├── check_softmax_stability.py
+│   │   ├── checkpoint.pkl
+│   │   ├── cifar-10-batches-py
+│   │   │   ├── batches.meta
+│   │   │   ├── data_batch_1
+│   │   │   ├── data_batch_2
+│   │   │   ├── data_batch_3
+│   │   │   ├── data_batch_4
+│   │   │   ├── data_batch_5
+│   │   │   ├── readme.html
+│   │   │   └── test_batch
+│   │   ├── classifier.py
+│   │   ├── data.py
+│   │   ├── download_cifar.sh
+│   │   ├── gradcheck_classifier.py
+│   │   ├── gradcheck_layers.py
+│   │   ├── layers.py
+│   │   ├── linear_classifier.py
+│   │   ├── optim.py
+│   │   ├── plot.pdf
+│   │   ├── test.py
+│   │   ├── train.py
+│   │   ├── two_layer_net.py
+│   │   └── utils.py
+│   └── tst.py
+├── hw5
+│   ├── FashionMNIST
+│   │   └── raw
+│   │       ├── t10k-images-idx3-ubyte
+│   │       ├── t10k-images-idx3-ubyte.gz
+│   │       ├── t10k-labels-idx1-ubyte
+│   │       ├── t10k-labels-idx1-ubyte.gz
+│   │       ├── train-images-idx3-ubyte
+│   │       ├── train-images-idx3-ubyte.gz
+│   │       ├── train-labels-idx1-ubyte
+│   │       └── train-labels-idx1-ubyte.gz
+│   ├── __MACOSX
+│   │   └── facades
+│   ├── cat.jpg
+│   ├── dog_finger.jpeg
+│   ├── facades
+│   │   ├── colormap.png
+│   │   ├── readme.txt
+│   │   ├── test_dev
+│   │   │   ├── eecs442_0000.jpg
+│   │   │   ├── eecs442_0000.png
+│   │   │   ├── eecs442_0001.jpg
+│   │   │   ├── eecs442_0001.png
+│   │   │   ├── eecs442_0002.jpg
+│   │   │   ├── eecs442_0002.png
+│   │   │   ├── eecs442_0003.jpg
+│   │   │   ├── eecs442_0003.png
+│   │   │   ├── eecs442_0004.jpg
+│   │   │   ├── eecs442_0004.png
+│   │   │   ├── eecs442_0005.jpg
+│   │   │   ├── eecs442_0005.png
+│   │   │   ├── eecs442_0006.jpg
+│   │   │   ├── eecs442_0006.png
+│   │   │   ├── eecs442_0007.jpg
+│   │   │   ├── eecs442_0007.png
+│   │   │   ├── eecs442_0008.jpg
+│   │   │   ├── eecs442_0008.png
+│   │   │   ├── eecs442_0009.jpg
+│   │   │   ├── eecs442_0009.png
+│   │   │   ├── eecs442_0010.jpg
+│   │   │   ├── eecs442_0010.png
+│   │   │   ├── eecs442_0011.jpg
+│   │   │   ├── eecs442_0011.png
+│   │   │   ├── eecs442_0012.jpg
+│   │   │   ├── eecs442_0012.png
+│   │   │   ├── eecs442_0013.jpg
+│   │   │   ├── eecs442_0013.png
+│   │   │   ├── eecs442_0014.jpg
+│   │   │   ├── eecs442_0014.png
+│   │   │   ├── eecs442_0015.jpg
+│   │   │   ├── eecs442_0015.png
+│   │   │   ├── eecs442_0016.jpg
+│   │   │   ├── eecs442_0016.png
+│   │   │   ├── eecs442_0017.jpg
+│   │   │   ├── eecs442_0017.png
+│   │   │   ├── eecs442_0018.jpg
+│   │   │   ├── eecs442_0018.png
+│   │   │   ├── eecs442_0019.jpg
+│   │   │   ├── eecs442_0019.png
+│   │   │   ├── eecs442_0020.jpg
+│   │   │   ├── eecs442_0020.png
+│   │   │   ├── eecs442_0021.jpg
+│   │   │   ├── eecs442_0021.png
+│   │   │   ├── eecs442_0022.jpg
+│   │   │   ├── eecs442_0022.png
+│   │   │   ├── eecs442_0023.jpg
+│   │   │   ├── eecs442_0023.png
+│   │   │   ├── eecs442_0024.jpg
+│   │   │   ├── eecs442_0024.png
+│   │   │   ├── eecs442_0025.jpg
+│   │   │   ├── eecs442_0025.png
+│   │   │   ├── eecs442_0026.jpg
+│   │   │   ├── eecs442_0026.png
+│   │   │   ├── eecs442_0027.jpg
+│   │   │   ├── eecs442_0027.png
+│   │   │   ├── eecs442_0028.jpg
+│   │   │   ├── eecs442_0028.png
+│   │   │   ├── eecs442_0029.jpg
+│   │   │   ├── eecs442_0029.png
+│   │   │   ├── eecs442_0030.jpg
+│   │   │   ├── eecs442_0030.png
+│   │   │   ├── eecs442_0031.jpg
+│   │   │   ├── eecs442_0031.png
+│   │   │   ├── eecs442_0032.jpg
+│   │   │   ├── eecs442_0032.png
+│   │   │   ├── eecs442_0033.jpg
+│   │   │   ├── eecs442_0033.png
+│   │   │   ├── eecs442_0034.jpg
+│   │   │   ├── eecs442_0034.png
+│   │   │   ├── eecs442_0035.jpg
+│   │   │   ├── eecs442_0035.png
+│   │   │   ├── eecs442_0036.jpg
+│   │   │   ├── eecs442_0036.png
+│   │   │   ├── eecs442_0037.jpg
+│   │   │   ├── eecs442_0037.png
+│   │   │   ├── eecs442_0038.jpg
+│   │   │   ├── eecs442_0038.png
+│   │   │   ├── eecs442_0039.jpg
+│   │   │   ├── eecs442_0039.png
+│   │   │   ├── eecs442_0040.jpg
+│   │   │   ├── eecs442_0040.png
+│   │   │   ├── eecs442_0041.jpg
+│   │   │   ├── eecs442_0041.png
+│   │   │   ├── eecs442_0042.jpg
+│   │   │   ├── eecs442_0042.png
+│   │   │   ├── eecs442_0043.jpg
+│   │   │   ├── eecs442_0043.png
+│   │   │   ├── eecs442_0044.jpg
+│   │   │   ├── eecs442_0044.png
+│   │   │   ├── eecs442_0045.jpg
+│   │   │   ├── eecs442_0045.png
+│   │   │   ├── eecs442_0046.jpg
+│   │   │   ├── eecs442_0046.png
+│   │   │   ├── eecs442_0047.jpg
+│   │   │   ├── eecs442_0047.png
+│   │   │   ├── eecs442_0048.jpg
+│   │   │   ├── eecs442_0048.png
+│   │   │   ├── eecs442_0049.jpg
+│   │   │   ├── eecs442_0049.png
+│   │   │   ├── eecs442_0050.jpg
+│   │   │   ├── eecs442_0050.png
+│   │   │   ├── eecs442_0051.jpg
+│   │   │   ├── eecs442_0051.png
+│   │   │   ├── eecs442_0052.jpg
+│   │   │   ├── eecs442_0052.png
+│   │   │   ├── eecs442_0053.jpg
+│   │   │   ├── eecs442_0053.png
+│   │   │   ├── eecs442_0054.jpg
+│   │   │   ├── eecs442_0054.png
+│   │   │   ├── eecs442_0055.jpg
+│   │   │   ├── eecs442_0055.png
+│   │   │   ├── eecs442_0056.jpg
+│   │   │   ├── eecs442_0056.png
+│   │   │   ├── eecs442_0057.jpg
+│   │   │   ├── eecs442_0057.png
+│   │   │   ├── eecs442_0058.jpg
+│   │   │   ├── eecs442_0058.png
+│   │   │   ├── eecs442_0059.jpg
+│   │   │   ├── eecs442_0059.png
+│   │   │   ├── eecs442_0060.jpg
+│   │   │   ├── eecs442_0060.png
+│   │   │   ├── eecs442_0061.jpg
+│   │   │   ├── eecs442_0061.png
+│   │   │   ├── eecs442_0062.jpg
+│   │   │   ├── eecs442_0062.png
+│   │   │   ├── eecs442_0063.jpg
+│   │   │   ├── eecs442_0063.png
+│   │   │   ├── eecs442_0064.jpg
+│   │   │   ├── eecs442_0064.png
+│   │   │   ├── eecs442_0065.jpg
+│   │   │   ├── eecs442_0065.png
+│   │   │   ├── eecs442_0066.jpg
+│   │   │   ├── eecs442_0066.png
+│   │   │   ├── eecs442_0067.jpg
+│   │   │   ├── eecs442_0067.png
+│   │   │   ├── eecs442_0068.jpg
+│   │   │   ├── eecs442_0068.png
+│   │   │   ├── eecs442_0069.jpg
+│   │   │   ├── eecs442_0069.png
+│   │   │   ├── eecs442_0070.jpg
+│   │   │   ├── eecs442_0070.png
+│   │   │   ├── eecs442_0071.jpg
+│   │   │   ├── eecs442_0071.png
+│   │   │   ├── eecs442_0072.jpg
+│   │   │   ├── eecs442_0072.png
+│   │   │   ├── eecs442_0073.jpg
+│   │   │   ├── eecs442_0073.png
+│   │   │   ├── eecs442_0074.jpg
+│   │   │   ├── eecs442_0074.png
+│   │   │   ├── eecs442_0075.jpg
+│   │   │   ├── eecs442_0075.png
+│   │   │   ├── eecs442_0076.jpg
+│   │   │   ├── eecs442_0076.png
+│   │   │   ├── eecs442_0077.jpg
+│   │   │   ├── eecs442_0077.png
+│   │   │   ├── eecs442_0078.jpg
+│   │   │   ├── eecs442_0078.png
+│   │   │   ├── eecs442_0079.jpg
+│   │   │   ├── eecs442_0079.png
+│   │   │   ├── eecs442_0080.jpg
+│   │   │   ├── eecs442_0080.png
+│   │   │   ├── eecs442_0081.jpg
+│   │   │   ├── eecs442_0081.png
+│   │   │   ├── eecs442_0082.jpg
+│   │   │   ├── eecs442_0082.png
+│   │   │   ├── eecs442_0083.jpg
+│   │   │   ├── eecs442_0083.png
+│   │   │   ├── eecs442_0084.jpg
+│   │   │   ├── eecs442_0084.png
+│   │   │   ├── eecs442_0085.jpg
+│   │   │   ├── eecs442_0085.png
+│   │   │   ├── eecs442_0086.jpg
+│   │   │   ├── eecs442_0086.png
+│   │   │   ├── eecs442_0087.jpg
+│   │   │   ├── eecs442_0087.png
+│   │   │   ├── eecs442_0088.jpg
+│   │   │   ├── eecs442_0088.png
+│   │   │   ├── eecs442_0089.jpg
+│   │   │   ├── eecs442_0089.png
+│   │   │   ├── eecs442_0090.jpg
+│   │   │   ├── eecs442_0090.png
+│   │   │   ├── eecs442_0091.jpg
+│   │   │   ├── eecs442_0091.png
+│   │   │   ├── eecs442_0092.jpg
+│   │   │   ├── eecs442_0092.png
+│   │   │   ├── eecs442_0093.jpg
+│   │   │   ├── eecs442_0093.png
+│   │   │   ├── eecs442_0094.jpg
+│   │   │   ├── eecs442_0094.png
+│   │   │   ├── eecs442_0095.jpg
+│   │   │   ├── eecs442_0095.png
+│   │   │   ├── eecs442_0096.jpg
+│   │   │   ├── eecs442_0096.png
+│   │   │   ├── eecs442_0097.jpg
+│   │   │   ├── eecs442_0097.png
+│   │   │   ├── eecs442_0098.jpg
+│   │   │   ├── eecs442_0098.png
+│   │   │   ├── eecs442_0099.jpg
+│   │   │   ├── eecs442_0099.png
+│   │   │   ├── eecs442_0100.jpg
+│   │   │   ├── eecs442_0100.png
+│   │   │   ├── eecs442_0101.jpg
+│   │   │   ├── eecs442_0101.png
+│   │   │   ├── eecs442_0102.jpg
+│   │   │   ├── eecs442_0102.png
+│   │   │   ├── eecs442_0103.jpg
+│   │   │   ├── eecs442_0103.png
+│   │   │   ├── eecs442_0104.jpg
+│   │   │   ├── eecs442_0104.png
+│   │   │   ├── eecs442_0105.jpg
+│   │   │   ├── eecs442_0105.png
+│   │   │   ├── eecs442_0106.jpg
+│   │   │   ├── eecs442_0106.png
+│   │   │   ├── eecs442_0107.jpg
+│   │   │   ├── eecs442_0107.png
+│   │   │   ├── eecs442_0108.jpg
+│   │   │   ├── eecs442_0108.png
+│   │   │   ├── eecs442_0109.jpg
+│   │   │   ├── eecs442_0109.png
+│   │   │   ├── eecs442_0110.jpg
+│   │   │   ├── eecs442_0110.png
+│   │   │   ├── eecs442_0111.jpg
+│   │   │   ├── eecs442_0111.png
+│   │   │   ├── eecs442_0112.jpg
+│   │   │   ├── eecs442_0112.png
+│   │   │   ├── eecs442_0113.jpg
+│   │   │   └── eecs442_0113.png
+│   │   └── train
+│   │       ├── eecs442_0000.jpg
+│   │       ├── eecs442_0000.png
+│   │       ├── eecs442_0001.jpg
+│   │       ├── eecs442_0001.png
+│   │       ├── eecs442_0002.jpg
+│   │       ├── eecs442_0002.png
+│   │       ├── eecs442_0003.jpg
+│   │       ├── eecs442_0003.png
+│   │       ├── eecs442_0004.jpg
+│   │       ├── eecs442_0004.png
+│   │       ├── eecs442_0005.jpg
+│   │       ├── eecs442_0005.png
+│   │       ├── eecs442_0006.jpg
+│   │       ├── eecs442_0006.png
+│   │       ├── eecs442_0007.jpg
+│   │       ├── eecs442_0007.png
+│   │       ├── eecs442_0008.jpg
+│   │       ├── eecs442_0008.png
+│   │       ├── eecs442_0009.jpg
+│   │       ├── eecs442_0009.png
+│   │       ├── eecs442_0010.jpg
+│   │       ├── eecs442_0010.png
+│   │       ├── eecs442_0011.jpg
+│   │       ├── eecs442_0011.png
+│   │       ├── eecs442_0012.jpg
+│   │       ├── eecs442_0012.png
+│   │       ├── eecs442_0013.jpg
+│   │       ├── eecs442_0013.png
+│   │       ├── eecs442_0014.jpg
+│   │       ├── eecs442_0014.png
+│   │       ├── eecs442_0015.jpg
+│   │       ├── eecs442_0015.png
+│   │       ├── eecs442_0016.jpg
+│   │       ├── eecs442_0016.png
+│   │       ├── eecs442_0017.jpg
+│   │       ├── eecs442_0017.png
+│   │       ├── eecs442_0018.jpg
+│   │       ├── eecs442_0018.png
+│   │       ├── eecs442_0019.jpg
+│   │       ├── eecs442_0019.png
+│   │       ├── eecs442_0020.jpg
+│   │       ├── eecs442_0020.png
+│   │       ├── eecs442_0021.jpg
+│   │       ├── eecs442_0021.png
+│   │       ├── eecs442_0022.jpg
+│   │       ├── eecs442_0022.png
+│   │       ├── eecs442_0023.jpg
+│   │       ├── eecs442_0023.png
+│   │       ├── eecs442_0024.jpg
+│   │       ├── eecs442_0024.png
+│   │       ├── eecs442_0025.jpg
+│   │       ├── eecs442_0025.png
+│   │       ├── eecs442_0026.jpg
+│   │       ├── eecs442_0026.png
+│   │       ├── eecs442_0027.jpg
+│   │       ├── eecs442_0027.png
+│   │       ├── eecs442_0028.jpg
+│   │       ├── eecs442_0028.png
+│   │       ├── eecs442_0029.jpg
+│   │       ├── eecs442_0029.png
+│   │       ├── eecs442_0030.jpg
+│   │       ├── eecs442_0030.png
+│   │       ├── eecs442_0031.jpg
+│   │       ├── eecs442_0031.png
+│   │       ├── eecs442_0032.jpg
+│   │       ├── eecs442_0032.png
+│   │       ├── eecs442_0033.jpg
+│   │       ├── eecs442_0033.png
+│   │       ├── eecs442_0034.jpg
+│   │       ├── eecs442_0034.png
+│   │       ├── eecs442_0035.jpg
+│   │       ├── eecs442_0035.png
+│   │       ├── eecs442_0036.jpg
+│   │       ├── eecs442_0036.png
+│   │       ├── eecs442_0037.jpg
+│   │       ├── eecs442_0037.png
+│   │       ├── eecs442_0038.jpg
+│   │       ├── eecs442_0038.png
+│   │       ├── eecs442_0039.jpg
+│   │       ├── eecs442_0039.png
+│   │       ├── eecs442_0040.jpg
+│   │       ├── eecs442_0040.png
+│   │       ├── eecs442_0041.jpg
+│   │       ├── eecs442_0041.png
+│   │       ├── eecs442_0042.jpg
+│   │       ├── eecs442_0042.png
+│   │       ├── eecs442_0043.jpg
+│   │       ├── eecs442_0043.png
+│   │       ├── eecs442_0044.jpg
+│   │       ├── eecs442_0044.png
+│   │       ├── eecs442_0045.jpg
+│   │       ├── eecs442_0045.png
+│   │       ├── eecs442_0046.jpg
+│   │       ├── eecs442_0046.png
+│   │       ├── eecs442_0047.jpg
+│   │       ├── eecs442_0047.png
+│   │       ├── eecs442_0048.jpg
+│   │       ├── eecs442_0048.png
+│   │       ├── eecs442_0049.jpg
+│   │       ├── eecs442_0049.png
+│   │       ├── eecs442_0050.jpg
+│   │       ├── eecs442_0050.png
+│   │       ├── eecs442_0051.jpg
+│   │       ├── eecs442_0051.png
+│   │       ├── eecs442_0052.jpg
+│   │       ├── eecs442_0052.png
+│   │       ├── eecs442_0053.jpg
+│   │       ├── eecs442_0053.png
+│   │       ├── eecs442_0054.jpg
+│   │       ├── eecs442_0054.png
+│   │       ├── eecs442_0055.jpg
+│   │       ├── eecs442_0055.png
+│   │       ├── eecs442_0056.jpg
+│   │       ├── eecs442_0056.png
+│   │       ├── eecs442_0057.jpg
+│   │       ├── eecs442_0057.png
+│   │       ├── eecs442_0058.jpg
+│   │       ├── eecs442_0058.png
+│   │       ├── eecs442_0059.jpg
+│   │       ├── eecs442_0059.png
+│   │       ├── eecs442_0060.jpg
+│   │       ├── eecs442_0060.png
+│   │       ├── eecs442_0061.jpg
+│   │       ├── eecs442_0061.png
+│   │       ├── eecs442_0062.jpg
+│   │       ├── eecs442_0062.png
+│   │       ├── eecs442_0063.jpg
+│   │       ├── eecs442_0063.png
+│   │       ├── eecs442_0064.jpg
+│   │       ├── eecs442_0064.png
+│   │       ├── eecs442_0065.jpg
+│   │       ├── eecs442_0065.png
+│   │       ├── eecs442_0066.jpg
+│   │       ├── eecs442_0066.png
+│   │       ├── eecs442_0067.jpg
+│   │       ├── eecs442_0067.png
+│   │       ├── eecs442_0068.jpg
+│   │       ├── eecs442_0068.png
+│   │       ├── eecs442_0069.jpg
+│   │       ├── eecs442_0069.png
+│   │       ├── eecs442_0070.jpg
+│   │       ├── eecs442_0070.png
+│   │       ├── eecs442_0071.jpg
+│   │       ├── eecs442_0071.png
+│   │       ├── eecs442_0072.jpg
+│   │       ├── eecs442_0072.png
+│   │       ├── eecs442_0073.jpg
+│   │       ├── eecs442_0073.png
+│   │       ├── eecs442_0074.jpg
+│   │       ├── eecs442_0074.png
+│   │       ├── eecs442_0075.jpg
+│   │       ├── eecs442_0075.png
+│   │       ├── eecs442_0076.jpg
+│   │       ├── eecs442_0076.png
+│   │       ├── eecs442_0077.jpg
+│   │       ├── eecs442_0077.png
+│   │       ├── eecs442_0078.jpg
+│   │       ├── eecs442_0078.png
+│   │       ├── eecs442_0079.jpg
+│   │       ├── eecs442_0079.png
+│   │       ├── eecs442_0080.jpg
+│   │       ├── eecs442_0080.png
+│   │       ├── eecs442_0081.jpg
+│   │       ├── eecs442_0081.png
+│   │       ├── eecs442_0082.jpg
+│   │       ├── eecs442_0082.png
+│   │       ├── eecs442_0083.jpg
+│   │       ├── eecs442_0083.png
+│   │       ├── eecs442_0084.jpg
+│   │       ├── eecs442_0084.png
+│   │       ├── eecs442_0085.jpg
+│   │       ├── eecs442_0085.png
+│   │       ├── eecs442_0086.jpg
+│   │       ├── eecs442_0086.png
+│   │       ├── eecs442_0087.jpg
+│   │       ├── eecs442_0087.png
+│   │       ├── eecs442_0088.jpg
+│   │       ├── eecs442_0088.png
+│   │       ├── eecs442_0089.jpg
+│   │       ├── eecs442_0089.png
+│   │       ├── eecs442_0090.jpg
+│   │       ├── eecs442_0090.png
+│   │       ├── eecs442_0091.jpg
+│   │       ├── eecs442_0091.png
+│   │       ├── eecs442_0092.jpg
+│   │       ├── eecs442_0092.png
+│   │       ├── eecs442_0093.jpg
+│   │       ├── eecs442_0093.png
+│   │       ├── eecs442_0094.jpg
+│   │       ├── eecs442_0094.png
+│   │       ├── eecs442_0095.jpg
+│   │       ├── eecs442_0095.png
+│   │       ├── eecs442_0096.jpg
+│   │       ├── eecs442_0096.png
+│   │       ├── eecs442_0097.jpg
+│   │       ├── eecs442_0097.png
+│   │       ├── eecs442_0098.jpg
+│   │       ├── eecs442_0098.png
+│   │       ├── eecs442_0099.jpg
+│   │       ├── eecs442_0099.png
+│   │       ├── eecs442_0100.jpg
+│   │       ├── eecs442_0100.png
+│   │       ├── eecs442_0101.jpg
+│   │       ├── eecs442_0101.png
+│   │       ├── eecs442_0102.jpg
+│   │       ├── eecs442_0102.png
+│   │       ├── eecs442_0103.jpg
+│   │       ├── eecs442_0103.png
+│   │       ├── eecs442_0104.jpg
+│   │       ├── eecs442_0104.png
+│   │       ├── eecs442_0105.jpg
+│   │       ├── eecs442_0105.png
+│   │       ├── eecs442_0106.jpg
+│   │       ├── eecs442_0106.png
+│   │       ├── eecs442_0107.jpg
+│   │       ├── eecs442_0107.png
+│   │       ├── eecs442_0108.jpg
+│   │       ├── eecs442_0108.png
+│   │       ├── eecs442_0109.jpg
+│   │       ├── eecs442_0109.png
+│   │       ├── eecs442_0110.jpg
+│   │       ├── eecs442_0110.png
+│   │       ├── eecs442_0111.jpg
+│   │       ├── eecs442_0111.png
+│   │       ├── eecs442_0112.jpg
+│   │       ├── eecs442_0112.png
+│   │       ├── eecs442_0113.jpg
+│   │       ├── eecs442_0113.png
+│   │       ├── eecs442_0114.jpg
+│   │       ├── eecs442_0114.png
+│   │       ├── eecs442_0115.jpg
+│   │       ├── eecs442_0115.png
+│   │       ├── eecs442_0116.jpg
+│   │       ├── eecs442_0116.png
+│   │       ├── eecs442_0117.jpg
+│   │       ├── eecs442_0117.png
+│   │       ├── eecs442_0118.jpg
+│   │       ├── eecs442_0118.png
+│   │       ├── eecs442_0119.jpg
+│   │       ├── eecs442_0119.png
+│   │       ├── eecs442_0120.jpg
+│   │       ├── eecs442_0120.png
+│   │       ├── eecs442_0121.jpg
+│   │       ├── eecs442_0121.png
+│   │       ├── eecs442_0122.jpg
+│   │       ├── eecs442_0122.png
+│   │       ├── eecs442_0123.jpg
+│   │       ├── eecs442_0123.png
+│   │       ├── eecs442_0124.jpg
+│   │       ├── eecs442_0124.png
+│   │       ├── eecs442_0125.jpg
+│   │       ├── eecs442_0125.png
+│   │       ├── eecs442_0126.jpg
+│   │       ├── eecs442_0126.png
+│   │       ├── eecs442_0127.jpg
+│   │       ├── eecs442_0127.png
+│   │       ├── eecs442_0128.jpg
+│   │       ├── eecs442_0128.png
+│   │       ├── eecs442_0129.jpg
+│   │       ├── eecs442_0129.png
+│   │       ├── eecs442_0130.jpg
+│   │       ├── eecs442_0130.png
+│   │       ├── eecs442_0131.jpg
+│   │       ├── eecs442_0131.png
+│   │       ├── eecs442_0132.jpg
+│   │       ├── eecs442_0132.png
+│   │       ├── eecs442_0133.jpg
+│   │       ├── eecs442_0133.png
+│   │       ├── eecs442_0134.jpg
+│   │       ├── eecs442_0134.png
+│   │       ├── eecs442_0135.jpg
+│   │       ├── eecs442_0135.png
+│   │       ├── eecs442_0136.jpg
+│   │       ├── eecs442_0136.png
+│   │       ├── eecs442_0137.jpg
+│   │       ├── eecs442_0137.png
+│   │       ├── eecs442_0138.jpg
+│   │       ├── eecs442_0138.png
+│   │       ├── eecs442_0139.jpg
+│   │       ├── eecs442_0139.png
+│   │       ├── eecs442_0140.jpg
+│   │       ├── eecs442_0140.png
+│   │       ├── eecs442_0141.jpg
+│   │       ├── eecs442_0141.png
+│   │       ├── eecs442_0142.jpg
+│   │       ├── eecs442_0142.png
+│   │       ├── eecs442_0143.jpg
+│   │       ├── eecs442_0143.png
+│   │       ├── eecs442_0144.jpg
+│   │       ├── eecs442_0144.png
+│   │       ├── eecs442_0145.jpg
+│   │       ├── eecs442_0145.png
+│   │       ├── eecs442_0146.jpg
+│   │       ├── eecs442_0146.png
+│   │       ├── eecs442_0147.jpg
+│   │       ├── eecs442_0147.png
+│   │       ├── eecs442_0148.jpg
+│   │       ├── eecs442_0148.png
+│   │       ├── eecs442_0149.jpg
+│   │       ├── eecs442_0149.png
+│   │       ├── eecs442_0150.jpg
+│   │       ├── eecs442_0150.png
+│   │       ├── eecs442_0151.jpg
+│   │       ├── eecs442_0151.png
+│   │       ├── eecs442_0152.jpg
+│   │       ├── eecs442_0152.png
+│   │       ├── eecs442_0153.jpg
+│   │       ├── eecs442_0153.png
+│   │       ├── eecs442_0154.jpg
+│   │       ├── eecs442_0154.png
+│   │       ├── eecs442_0155.jpg
+│   │       ├── eecs442_0155.png
+│   │       ├── eecs442_0156.jpg
+│   │       ├── eecs442_0156.png
+│   │       ├── eecs442_0157.jpg
+│   │       ├── eecs442_0157.png
+│   │       ├── eecs442_0158.jpg
+│   │       ├── eecs442_0158.png
+│   │       ├── eecs442_0159.jpg
+│   │       ├── eecs442_0159.png
+│   │       ├── eecs442_0160.jpg
+│   │       ├── eecs442_0160.png
+│   │       ├── eecs442_0161.jpg
+│   │       ├── eecs442_0161.png
+│   │       ├── eecs442_0162.jpg
+│   │       ├── eecs442_0162.png
+│   │       ├── eecs442_0163.jpg
+│   │       ├── eecs442_0163.png
+│   │       ├── eecs442_0164.jpg
+│   │       ├── eecs442_0164.png
+│   │       ├── eecs442_0165.jpg
+│   │       ├── eecs442_0165.png
+│   │       ├── eecs442_0166.jpg
+│   │       ├── eecs442_0166.png
+│   │       ├── eecs442_0167.jpg
+│   │       ├── eecs442_0167.png
+│   │       ├── eecs442_0168.jpg
+│   │       ├── eecs442_0168.png
+│   │       ├── eecs442_0169.jpg
+│   │       ├── eecs442_0169.png
+│   │       ├── eecs442_0170.jpg
+│   │       ├── eecs442_0170.png
+│   │       ├── eecs442_0171.jpg
+│   │       ├── eecs442_0171.png
+│   │       ├── eecs442_0172.jpg
+│   │       ├── eecs442_0172.png
+│   │       ├── eecs442_0173.jpg
+│   │       ├── eecs442_0173.png
+│   │       ├── eecs442_0174.jpg
+│   │       ├── eecs442_0174.png
+│   │       ├── eecs442_0175.jpg
+│   │       ├── eecs442_0175.png
+│   │       ├── eecs442_0176.jpg
+│   │       ├── eecs442_0176.png
+│   │       ├── eecs442_0177.jpg
+│   │       ├── eecs442_0177.png
+│   │       ├── eecs442_0178.jpg
+│   │       ├── eecs442_0178.png
+│   │       ├── eecs442_0179.jpg
+│   │       ├── eecs442_0179.png
+│   │       ├── eecs442_0180.jpg
+│   │       ├── eecs442_0180.png
+│   │       ├── eecs442_0181.jpg
+│   │       ├── eecs442_0181.png
+│   │       ├── eecs442_0182.jpg
+│   │       ├── eecs442_0182.png
+│   │       ├── eecs442_0183.jpg
+│   │       ├── eecs442_0183.png
+│   │       ├── eecs442_0184.jpg
+│   │       ├── eecs442_0184.png
+│   │       ├── eecs442_0185.jpg
+│   │       ├── eecs442_0185.png
+│   │       ├── eecs442_0186.jpg
+│   │       ├── eecs442_0186.png
+│   │       ├── eecs442_0187.jpg
+│   │       ├── eecs442_0187.png
+│   │       ├── eecs442_0188.jpg
+│   │       ├── eecs442_0188.png
+│   │       ├── eecs442_0189.jpg
+│   │       ├── eecs442_0189.png
+│   │       ├── eecs442_0190.jpg
+│   │       ├── eecs442_0190.png
+│   │       ├── eecs442_0191.jpg
+│   │       ├── eecs442_0191.png
+│   │       ├── eecs442_0192.jpg
+│   │       ├── eecs442_0192.png
+│   │       ├── eecs442_0193.jpg
+│   │       ├── eecs442_0193.png
+│   │       ├── eecs442_0194.jpg
+│   │       ├── eecs442_0194.png
+│   │       ├── eecs442_0195.jpg
+│   │       ├── eecs442_0195.png
+│   │       ├── eecs442_0196.jpg
+│   │       ├── eecs442_0196.png
+│   │       ├── eecs442_0197.jpg
+│   │       ├── eecs442_0197.png
+│   │       ├── eecs442_0198.jpg
+│   │       ├── eecs442_0198.png
+│   │       ├── eecs442_0199.jpg
+│   │       ├── eecs442_0199.png
+│   │       ├── eecs442_0200.jpg
+│   │       ├── eecs442_0200.png
+│   │       ├── eecs442_0201.jpg
+│   │       ├── eecs442_0201.png
+│   │       ├── eecs442_0202.jpg
+│   │       ├── eecs442_0202.png
+│   │       ├── eecs442_0203.jpg
+│   │       ├── eecs442_0203.png
+│   │       ├── eecs442_0204.jpg
+│   │       ├── eecs442_0204.png
+│   │       ├── eecs442_0205.jpg
+│   │       ├── eecs442_0205.png
+│   │       ├── eecs442_0206.jpg
+│   │       ├── eecs442_0206.png
+│   │       ├── eecs442_0207.jpg
+│   │       ├── eecs442_0207.png
+│   │       ├── eecs442_0208.jpg
+│   │       ├── eecs442_0208.png
+│   │       ├── eecs442_0209.jpg
+│   │       ├── eecs442_0209.png
+│   │       ├── eecs442_0210.jpg
+│   │       ├── eecs442_0210.png
+│   │       ├── eecs442_0211.jpg
+│   │       ├── eecs442_0211.png
+│   │       ├── eecs442_0212.jpg
+│   │       ├── eecs442_0212.png
+│   │       ├── eecs442_0213.jpg
+│   │       ├── eecs442_0213.png
+│   │       ├── eecs442_0214.jpg
+│   │       ├── eecs442_0214.png
+│   │       ├── eecs442_0215.jpg
+│   │       ├── eecs442_0215.png
+│   │       ├── eecs442_0216.jpg
+│   │       ├── eecs442_0216.png
+│   │       ├── eecs442_0217.jpg
+│   │       ├── eecs442_0217.png
+│   │       ├── eecs442_0218.jpg
+│   │       ├── eecs442_0218.png
+│   │       ├── eecs442_0219.jpg
+│   │       ├── eecs442_0219.png
+│   │       ├── eecs442_0220.jpg
+│   │       ├── eecs442_0220.png
+│   │       ├── eecs442_0221.jpg
+│   │       ├── eecs442_0221.png
+│   │       ├── eecs442_0222.jpg
+│   │       ├── eecs442_0222.png
+│   │       ├── eecs442_0223.jpg
+│   │       ├── eecs442_0223.png
+│   │       ├── eecs442_0224.jpg
+│   │       ├── eecs442_0224.png
+│   │       ├── eecs442_0225.jpg
+│   │       ├── eecs442_0225.png
+│   │       ├── eecs442_0226.jpg
+│   │       ├── eecs442_0226.png
+│   │       ├── eecs442_0227.jpg
+│   │       ├── eecs442_0227.png
+│   │       ├── eecs442_0228.jpg
+│   │       ├── eecs442_0228.png
+│   │       ├── eecs442_0229.jpg
+│   │       ├── eecs442_0229.png
+│   │       ├── eecs442_0230.jpg
+│   │       ├── eecs442_0230.png
+│   │       ├── eecs442_0231.jpg
+│   │       ├── eecs442_0231.png
+│   │       ├── eecs442_0232.jpg
+│   │       ├── eecs442_0232.png
+│   │       ├── eecs442_0233.jpg
+│   │       ├── eecs442_0233.png
+│   │       ├── eecs442_0234.jpg
+│   │       ├── eecs442_0234.png
+│   │       ├── eecs442_0235.jpg
+│   │       ├── eecs442_0235.png
+│   │       ├── eecs442_0236.jpg
+│   │       ├── eecs442_0236.png
+│   │       ├── eecs442_0237.jpg
+│   │       ├── eecs442_0237.png
+│   │       ├── eecs442_0238.jpg
+│   │       ├── eecs442_0238.png
+│   │       ├── eecs442_0239.jpg
+│   │       ├── eecs442_0239.png
+│   │       ├── eecs442_0240.jpg
+│   │       ├── eecs442_0240.png
+│   │       ├── eecs442_0241.jpg
+│   │       ├── eecs442_0241.png
+│   │       ├── eecs442_0242.jpg
+│   │       ├── eecs442_0242.png
+│   │       ├── eecs442_0243.jpg
+│   │       ├── eecs442_0243.png
+│   │       ├── eecs442_0244.jpg
+│   │       ├── eecs442_0244.png
+│   │       ├── eecs442_0245.jpg
+│   │       ├── eecs442_0245.png
+│   │       ├── eecs442_0246.jpg
+│   │       ├── eecs442_0246.png
+│   │       ├── eecs442_0247.jpg
+│   │       ├── eecs442_0247.png
+│   │       ├── eecs442_0248.jpg
+│   │       ├── eecs442_0248.png
+│   │       ├── eecs442_0249.jpg
+│   │       ├── eecs442_0249.png
+│   │       ├── eecs442_0250.jpg
+│   │       ├── eecs442_0250.png
+│   │       ├── eecs442_0251.jpg
+│   │       ├── eecs442_0251.png
+│   │       ├── eecs442_0252.jpg
+│   │       ├── eecs442_0252.png
+│   │       ├── eecs442_0253.jpg
+│   │       ├── eecs442_0253.png
+│   │       ├── eecs442_0254.jpg
+│   │       ├── eecs442_0254.png
+│   │       ├── eecs442_0255.jpg
+│   │       ├── eecs442_0255.png
+│   │       ├── eecs442_0256.jpg
+│   │       ├── eecs442_0256.png
+│   │       ├── eecs442_0257.jpg
+│   │       ├── eecs442_0257.png
+│   │       ├── eecs442_0258.jpg
+│   │       ├── eecs442_0258.png
+│   │       ├── eecs442_0259.jpg
+│   │       ├── eecs442_0259.png
+│   │       ├── eecs442_0260.jpg
+│   │       ├── eecs442_0260.png
+│   │       ├── eecs442_0261.jpg
+│   │       ├── eecs442_0261.png
+│   │       ├── eecs442_0262.jpg
+│   │       ├── eecs442_0262.png
+│   │       ├── eecs442_0263.jpg
+│   │       ├── eecs442_0263.png
+│   │       ├── eecs442_0264.jpg
+│   │       ├── eecs442_0264.png
+│   │       ├── eecs442_0265.jpg
+│   │       ├── eecs442_0265.png
+│   │       ├── eecs442_0266.jpg
+│   │       ├── eecs442_0266.png
+│   │       ├── eecs442_0267.jpg
+│   │       ├── eecs442_0267.png
+│   │       ├── eecs442_0268.jpg
+│   │       ├── eecs442_0268.png
+│   │       ├── eecs442_0269.jpg
+│   │       ├── eecs442_0269.png
+│   │       ├── eecs442_0270.jpg
+│   │       ├── eecs442_0270.png
+│   │       ├── eecs442_0271.jpg
+│   │       ├── eecs442_0271.png
+│   │       ├── eecs442_0272.jpg
+│   │       ├── eecs442_0272.png
+│   │       ├── eecs442_0273.jpg
+│   │       ├── eecs442_0273.png
+│   │       ├── eecs442_0274.jpg
+│   │       ├── eecs442_0274.png
+│   │       ├── eecs442_0275.jpg
+│   │       ├── eecs442_0275.png
+│   │       ├── eecs442_0276.jpg
+│   │       ├── eecs442_0276.png
+│   │       ├── eecs442_0277.jpg
+│   │       ├── eecs442_0277.png
+│   │       ├── eecs442_0278.jpg
+│   │       ├── eecs442_0278.png
+│   │       ├── eecs442_0279.jpg
+│   │       ├── eecs442_0279.png
+│   │       ├── eecs442_0280.jpg
+│   │       ├── eecs442_0280.png
+│   │       ├── eecs442_0281.jpg
+│   │       ├── eecs442_0281.png
+│   │       ├── eecs442_0282.jpg
+│   │       ├── eecs442_0282.png
+│   │       ├── eecs442_0283.jpg
+│   │       ├── eecs442_0283.png
+│   │       ├── eecs442_0284.jpg
+│   │       ├── eecs442_0284.png
+│   │       ├── eecs442_0285.jpg
+│   │       ├── eecs442_0285.png
+│   │       ├── eecs442_0286.jpg
+│   │       ├── eecs442_0286.png
+│   │       ├── eecs442_0287.jpg
+│   │       ├── eecs442_0287.png
+│   │       ├── eecs442_0288.jpg
+│   │       ├── eecs442_0288.png
+│   │       ├── eecs442_0289.jpg
+│   │       ├── eecs442_0289.png
+│   │       ├── eecs442_0290.jpg
+│   │       ├── eecs442_0290.png
+│   │       ├── eecs442_0291.jpg
+│   │       ├── eecs442_0291.png
+│   │       ├── eecs442_0292.jpg
+│   │       ├── eecs442_0292.png
+│   │       ├── eecs442_0293.jpg
+│   │       ├── eecs442_0293.png
+│   │       ├── eecs442_0294.jpg
+│   │       ├── eecs442_0294.png
+│   │       ├── eecs442_0295.jpg
+│   │       ├── eecs442_0295.png
+│   │       ├── eecs442_0296.jpg
+│   │       ├── eecs442_0296.png
+│   │       ├── eecs442_0297.jpg
+│   │       ├── eecs442_0297.png
+│   │       ├── eecs442_0298.jpg
+│   │       ├── eecs442_0298.png
+│   │       ├── eecs442_0299.jpg
+│   │       ├── eecs442_0299.png
+│   │       ├── eecs442_0300.jpg
+│   │       ├── eecs442_0300.png
+│   │       ├── eecs442_0301.jpg
+│   │       ├── eecs442_0301.png
+│   │       ├── eecs442_0302.jpg
+│   │       ├── eecs442_0302.png
+│   │       ├── eecs442_0303.jpg
+│   │       ├── eecs442_0303.png
+│   │       ├── eecs442_0304.jpg
+│   │       ├── eecs442_0304.png
+│   │       ├── eecs442_0305.jpg
+│   │       ├── eecs442_0305.png
+│   │       ├── eecs442_0306.jpg
+│   │       ├── eecs442_0306.png
+│   │       ├── eecs442_0307.jpg
+│   │       ├── eecs442_0307.png
+│   │       ├── eecs442_0308.jpg
+│   │       ├── eecs442_0308.png
+│   │       ├── eecs442_0309.jpg
+│   │       ├── eecs442_0309.png
+│   │       ├── eecs442_0310.jpg
+│   │       ├── eecs442_0310.png
+│   │       ├── eecs442_0311.jpg
+│   │       ├── eecs442_0311.png
+│   │       ├── eecs442_0312.jpg
+│   │       ├── eecs442_0312.png
+│   │       ├── eecs442_0313.jpg
+│   │       ├── eecs442_0313.png
+│   │       ├── eecs442_0314.jpg
+│   │       ├── eecs442_0314.png
+│   │       ├── eecs442_0315.jpg
+│   │       ├── eecs442_0315.png
+│   │       ├── eecs442_0316.jpg
+│   │       ├── eecs442_0316.png
+│   │       ├── eecs442_0317.jpg
+│   │       ├── eecs442_0317.png
+│   │       ├── eecs442_0318.jpg
+│   │       ├── eecs442_0318.png
+│   │       ├── eecs442_0319.jpg
+│   │       ├── eecs442_0319.png
+│   │       ├── eecs442_0320.jpg
+│   │       ├── eecs442_0320.png
+│   │       ├── eecs442_0321.jpg
+│   │       ├── eecs442_0321.png
+│   │       ├── eecs442_0322.jpg
+│   │       ├── eecs442_0322.png
+│   │       ├── eecs442_0323.jpg
+│   │       ├── eecs442_0323.png
+│   │       ├── eecs442_0324.jpg
+│   │       ├── eecs442_0324.png
+│   │       ├── eecs442_0325.jpg
+│   │       ├── eecs442_0325.png
+│   │       ├── eecs442_0326.jpg
+│   │       ├── eecs442_0326.png
+│   │       ├── eecs442_0327.jpg
+│   │       ├── eecs442_0327.png
+│   │       ├── eecs442_0328.jpg
+│   │       ├── eecs442_0328.png
+│   │       ├── eecs442_0329.jpg
+│   │       ├── eecs442_0329.png
+│   │       ├── eecs442_0330.jpg
+│   │       ├── eecs442_0330.png
+│   │       ├── eecs442_0331.jpg
+│   │       ├── eecs442_0331.png
+│   │       ├── eecs442_0332.jpg
+│   │       ├── eecs442_0332.png
+│   │       ├── eecs442_0333.jpg
+│   │       ├── eecs442_0333.png
+│   │       ├── eecs442_0334.jpg
+│   │       ├── eecs442_0334.png
+│   │       ├── eecs442_0335.jpg
+│   │       ├── eecs442_0335.png
+│   │       ├── eecs442_0336.jpg
+│   │       ├── eecs442_0336.png
+│   │       ├── eecs442_0337.jpg
+│   │       ├── eecs442_0337.png
+│   │       ├── eecs442_0338.jpg
+│   │       ├── eecs442_0338.png
+│   │       ├── eecs442_0339.jpg
+│   │       ├── eecs442_0339.png
+│   │       ├── eecs442_0340.jpg
+│   │       ├── eecs442_0340.png
+│   │       ├── eecs442_0341.jpg
+│   │       ├── eecs442_0341.png
+│   │       ├── eecs442_0342.jpg
+│   │       ├── eecs442_0342.png
+│   │       ├── eecs442_0343.jpg
+│   │       ├── eecs442_0343.png
+│   │       ├── eecs442_0344.jpg
+│   │       ├── eecs442_0344.png
+│   │       ├── eecs442_0345.jpg
+│   │       ├── eecs442_0345.png
+│   │       ├── eecs442_0346.jpg
+│   │       ├── eecs442_0346.png
+│   │       ├── eecs442_0347.jpg
+│   │       ├── eecs442_0347.png
+│   │       ├── eecs442_0348.jpg
+│   │       ├── eecs442_0348.png
+│   │       ├── eecs442_0349.jpg
+│   │       ├── eecs442_0349.png
+│   │       ├── eecs442_0350.jpg
+│   │       ├── eecs442_0350.png
+│   │       ├── eecs442_0351.jpg
+│   │       ├── eecs442_0351.png
+│   │       ├── eecs442_0352.jpg
+│   │       ├── eecs442_0352.png
+│   │       ├── eecs442_0353.jpg
+│   │       ├── eecs442_0353.png
+│   │       ├── eecs442_0354.jpg
+│   │       ├── eecs442_0354.png
+│   │       ├── eecs442_0355.jpg
+│   │       ├── eecs442_0355.png
+│   │       ├── eecs442_0356.jpg
+│   │       ├── eecs442_0356.png
+│   │       ├── eecs442_0357.jpg
+│   │       ├── eecs442_0357.png
+│   │       ├── eecs442_0358.jpg
+│   │       ├── eecs442_0358.png
+│   │       ├── eecs442_0359.jpg
+│   │       ├── eecs442_0359.png
+│   │       ├── eecs442_0360.jpg
+│   │       ├── eecs442_0360.png
+│   │       ├── eecs442_0361.jpg
+│   │       ├── eecs442_0361.png
+│   │       ├── eecs442_0362.jpg
+│   │       ├── eecs442_0362.png
+│   │       ├── eecs442_0363.jpg
+│   │       ├── eecs442_0363.png
+│   │       ├── eecs442_0364.jpg
+│   │       ├── eecs442_0364.png
+│   │       ├── eecs442_0365.jpg
+│   │       ├── eecs442_0365.png
+│   │       ├── eecs442_0366.jpg
+│   │       ├── eecs442_0366.png
+│   │       ├── eecs442_0367.jpg
+│   │       ├── eecs442_0367.png
+│   │       ├── eecs442_0368.jpg
+│   │       ├── eecs442_0368.png
+│   │       ├── eecs442_0369.jpg
+│   │       ├── eecs442_0369.png
+│   │       ├── eecs442_0370.jpg
+│   │       ├── eecs442_0370.png
+│   │       ├── eecs442_0371.jpg
+│   │       ├── eecs442_0371.png
+│   │       ├── eecs442_0372.jpg
+│   │       ├── eecs442_0372.png
+│   │       ├── eecs442_0373.jpg
+│   │       ├── eecs442_0373.png
+│   │       ├── eecs442_0374.jpg
+│   │       ├── eecs442_0374.png
+│   │       ├── eecs442_0375.jpg
+│   │       ├── eecs442_0375.png
+│   │       ├── eecs442_0376.jpg
+│   │       ├── eecs442_0376.png
+│   │       ├── eecs442_0377.jpg
+│   │       ├── eecs442_0377.png
+│   │       ├── eecs442_0378.jpg
+│   │       ├── eecs442_0378.png
+│   │       ├── eecs442_0379.jpg
+│   │       ├── eecs442_0379.png
+│   │       ├── eecs442_0380.jpg
+│   │       ├── eecs442_0380.png
+│   │       ├── eecs442_0381.jpg
+│   │       ├── eecs442_0381.png
+│   │       ├── eecs442_0382.jpg
+│   │       ├── eecs442_0382.png
+│   │       ├── eecs442_0383.jpg
+│   │       ├── eecs442_0383.png
+│   │       ├── eecs442_0384.jpg
+│   │       ├── eecs442_0384.png
+│   │       ├── eecs442_0385.jpg
+│   │       ├── eecs442_0385.png
+│   │       ├── eecs442_0386.jpg
+│   │       ├── eecs442_0386.png
+│   │       ├── eecs442_0387.jpg
+│   │       ├── eecs442_0387.png
+│   │       ├── eecs442_0388.jpg
+│   │       ├── eecs442_0388.png
+│   │       ├── eecs442_0389.jpg
+│   │       ├── eecs442_0389.png
+│   │       ├── eecs442_0390.jpg
+│   │       ├── eecs442_0390.png
+│   │       ├── eecs442_0391.jpg
+│   │       ├── eecs442_0391.png
+│   │       ├── eecs442_0392.jpg
+│   │       ├── eecs442_0392.png
+│   │       ├── eecs442_0393.jpg
+│   │       ├── eecs442_0393.png
+│   │       ├── eecs442_0394.jpg
+│   │       ├── eecs442_0394.png
+│   │       ├── eecs442_0395.jpg
+│   │       ├── eecs442_0395.png
+│   │       ├── eecs442_0396.jpg
+│   │       ├── eecs442_0396.png
+│   │       ├── eecs442_0397.jpg
+│   │       ├── eecs442_0397.png
+│   │       ├── eecs442_0398.jpg
+│   │       ├── eecs442_0398.png
+│   │       ├── eecs442_0399.jpg
+│   │       ├── eecs442_0399.png
+│   │       ├── eecs442_0400.jpg
+│   │       ├── eecs442_0400.png
+│   │       ├── eecs442_0401.jpg
+│   │       ├── eecs442_0401.png
+│   │       ├── eecs442_0402.jpg
+│   │       ├── eecs442_0402.png
+│   │       ├── eecs442_0403.jpg
+│   │       ├── eecs442_0403.png
+│   │       ├── eecs442_0404.jpg
+│   │       ├── eecs442_0404.png
+│   │       ├── eecs442_0405.jpg
+│   │       ├── eecs442_0405.png
+│   │       ├── eecs442_0406.jpg
+│   │       ├── eecs442_0406.png
+│   │       ├── eecs442_0407.jpg
+│   │       ├── eecs442_0407.png
+│   │       ├── eecs442_0408.jpg
+│   │       ├── eecs442_0408.png
+│   │       ├── eecs442_0409.jpg
+│   │       ├── eecs442_0409.png
+│   │       ├── eecs442_0410.jpg
+│   │       ├── eecs442_0410.png
+│   │       ├── eecs442_0411.jpg
+│   │       ├── eecs442_0411.png
+│   │       ├── eecs442_0412.jpg
+│   │       ├── eecs442_0412.png
+│   │       ├── eecs442_0413.jpg
+│   │       ├── eecs442_0413.png
+│   │       ├── eecs442_0414.jpg
+│   │       ├── eecs442_0414.png
+│   │       ├── eecs442_0415.jpg
+│   │       ├── eecs442_0415.png
+│   │       ├── eecs442_0416.jpg
+│   │       ├── eecs442_0416.png
+│   │       ├── eecs442_0417.jpg
+│   │       ├── eecs442_0417.png
+│   │       ├── eecs442_0418.jpg
+│   │       ├── eecs442_0418.png
+│   │       ├── eecs442_0419.jpg
+│   │       ├── eecs442_0419.png
+│   │       ├── eecs442_0420.jpg
+│   │       ├── eecs442_0420.png
+│   │       ├── eecs442_0421.jpg
+│   │       ├── eecs442_0421.png
+│   │       ├── eecs442_0422.jpg
+│   │       ├── eecs442_0422.png
+│   │       ├── eecs442_0423.jpg
+│   │       ├── eecs442_0423.png
+│   │       ├── eecs442_0424.jpg
+│   │       ├── eecs442_0424.png
+│   │       ├── eecs442_0425.jpg
+│   │       ├── eecs442_0425.png
+│   │       ├── eecs442_0426.jpg
+│   │       ├── eecs442_0426.png
+│   │       ├── eecs442_0427.jpg
+│   │       ├── eecs442_0427.png
+│   │       ├── eecs442_0428.jpg
+│   │       ├── eecs442_0428.png
+│   │       ├── eecs442_0429.jpg
+│   │       ├── eecs442_0429.png
+│   │       ├── eecs442_0430.jpg
+│   │       ├── eecs442_0430.png
+│   │       ├── eecs442_0431.jpg
+│   │       ├── eecs442_0431.png
+│   │       ├── eecs442_0432.jpg
+│   │       ├── eecs442_0432.png
+│   │       ├── eecs442_0433.jpg
+│   │       ├── eecs442_0433.png
+│   │       ├── eecs442_0434.jpg
+│   │       ├── eecs442_0434.png
+│   │       ├── eecs442_0435.jpg
+│   │       ├── eecs442_0435.png
+│   │       ├── eecs442_0436.jpg
+│   │       ├── eecs442_0436.png
+│   │       ├── eecs442_0437.jpg
+│   │       ├── eecs442_0437.png
+│   │       ├── eecs442_0438.jpg
+│   │       ├── eecs442_0438.png
+│   │       ├── eecs442_0439.jpg
+│   │       ├── eecs442_0439.png
+│   │       ├── eecs442_0440.jpg
+│   │       ├── eecs442_0440.png
+│   │       ├── eecs442_0441.jpg
+│   │       ├── eecs442_0441.png
+│   │       ├── eecs442_0442.jpg
+│   │       ├── eecs442_0442.png
+│   │       ├── eecs442_0443.jpg
+│   │       ├── eecs442_0443.png
+│   │       ├── eecs442_0444.jpg
+│   │       ├── eecs442_0444.png
+│   │       ├── eecs442_0445.jpg
+│   │       ├── eecs442_0445.png
+│   │       ├── eecs442_0446.jpg
+│   │       ├── eecs442_0446.png
+│   │       ├── eecs442_0447.jpg
+│   │       ├── eecs442_0447.png
+│   │       ├── eecs442_0448.jpg
+│   │       ├── eecs442_0448.png
+│   │       ├── eecs442_0449.jpg
+│   │       ├── eecs442_0449.png
+│   │       ├── eecs442_0450.jpg
+│   │       ├── eecs442_0450.png
+│   │       ├── eecs442_0451.jpg
+│   │       ├── eecs442_0451.png
+│   │       ├── eecs442_0452.jpg
+│   │       ├── eecs442_0452.png
+│   │       ├── eecs442_0453.jpg
+│   │       ├── eecs442_0453.png
+│   │       ├── eecs442_0454.jpg
+│   │       ├── eecs442_0454.png
+│   │       ├── eecs442_0455.jpg
+│   │       ├── eecs442_0455.png
+│   │       ├── eecs442_0456.jpg
+│   │       ├── eecs442_0456.png
+│   │       ├── eecs442_0457.jpg
+│   │       ├── eecs442_0457.png
+│   │       ├── eecs442_0458.jpg
+│   │       ├── eecs442_0458.png
+│   │       ├── eecs442_0459.jpg
+│   │       ├── eecs442_0459.png
+│   │       ├── eecs442_0460.jpg
+│   │       ├── eecs442_0460.png
+│   │       ├── eecs442_0461.jpg
+│   │       ├── eecs442_0461.png
+│   │       ├── eecs442_0462.jpg
+│   │       ├── eecs442_0462.png
+│   │       ├── eecs442_0463.jpg
+│   │       ├── eecs442_0463.png
+│   │       ├── eecs442_0464.jpg
+│   │       ├── eecs442_0464.png
+│   │       ├── eecs442_0465.jpg
+│   │       ├── eecs442_0465.png
+│   │       ├── eecs442_0466.jpg
+│   │       ├── eecs442_0466.png
+│   │       ├── eecs442_0467.jpg
+│   │       ├── eecs442_0467.png
+│   │       ├── eecs442_0468.jpg
+│   │       ├── eecs442_0468.png
+│   │       ├── eecs442_0469.jpg
+│   │       ├── eecs442_0469.png
+│   │       ├── eecs442_0470.jpg
+│   │       ├── eecs442_0470.png
+│   │       ├── eecs442_0471.jpg
+│   │       ├── eecs442_0471.png
+│   │       ├── eecs442_0472.jpg
+│   │       ├── eecs442_0472.png
+│   │       ├── eecs442_0473.jpg
+│   │       ├── eecs442_0473.png
+│   │       ├── eecs442_0474.jpg
+│   │       ├── eecs442_0474.png
+│   │       ├── eecs442_0475.jpg
+│   │       ├── eecs442_0475.png
+│   │       ├── eecs442_0476.jpg
+│   │       ├── eecs442_0476.png
+│   │       ├── eecs442_0477.jpg
+│   │       ├── eecs442_0477.png
+│   │       ├── eecs442_0478.jpg
+│   │       ├── eecs442_0478.png
+│   │       ├── eecs442_0479.jpg
+│   │       ├── eecs442_0479.png
+│   │       ├── eecs442_0480.jpg
+│   │       ├── eecs442_0480.png
+│   │       ├── eecs442_0481.jpg
+│   │       ├── eecs442_0481.png
+│   │       ├── eecs442_0482.jpg
+│   │       ├── eecs442_0482.png
+│   │       ├── eecs442_0483.jpg
+│   │       ├── eecs442_0483.png
+│   │       ├── eecs442_0484.jpg
+│   │       ├── eecs442_0484.png
+│   │       ├── eecs442_0485.jpg
+│   │       ├── eecs442_0485.png
+│   │       ├── eecs442_0486.jpg
+│   │       ├── eecs442_0486.png
+│   │       ├── eecs442_0487.jpg
+│   │       ├── eecs442_0487.png
+│   │       ├── eecs442_0488.jpg
+│   │       ├── eecs442_0488.png
+│   │       ├── eecs442_0489.jpg
+│   │       ├── eecs442_0489.png
+│   │       ├── eecs442_0490.jpg
+│   │       ├── eecs442_0490.png
+│   │       ├── eecs442_0491.jpg
+│   │       ├── eecs442_0491.png
+│   │       ├── eecs442_0492.jpg
+│   │       ├── eecs442_0492.png
+│   │       ├── eecs442_0493.jpg
+│   │       ├── eecs442_0493.png
+│   │       ├── eecs442_0494.jpg
+│   │       ├── eecs442_0494.png
+│   │       ├── eecs442_0495.jpg
+│   │       ├── eecs442_0495.png
+│   │       ├── eecs442_0496.jpg
+│   │       ├── eecs442_0496.png
+│   │       ├── eecs442_0497.jpg
+│   │       ├── eecs442_0497.png
+│   │       ├── eecs442_0498.jpg
+│   │       ├── eecs442_0498.png
+│   │       ├── eecs442_0499.jpg
+│   │       ├── eecs442_0499.png
+│   │       ├── eecs442_0500.jpg
+│   │       ├── eecs442_0500.png
+│   │       ├── eecs442_0501.jpg
+│   │       ├── eecs442_0501.png
+│   │       ├── eecs442_0502.jpg
+│   │       ├── eecs442_0502.png
+│   │       ├── eecs442_0503.jpg
+│   │       ├── eecs442_0503.png
+│   │       ├── eecs442_0504.jpg
+│   │       ├── eecs442_0504.png
+│   │       ├── eecs442_0505.jpg
+│   │       ├── eecs442_0505.png
+│   │       ├── eecs442_0506.jpg
+│   │       ├── eecs442_0506.png
+│   │       ├── eecs442_0507.jpg
+│   │       ├── eecs442_0507.png
+│   │       ├── eecs442_0508.jpg
+│   │       ├── eecs442_0508.png
+│   │       ├── eecs442_0509.jpg
+│   │       ├── eecs442_0509.png
+│   │       ├── eecs442_0510.jpg
+│   │       ├── eecs442_0510.png
+│   │       ├── eecs442_0511.jpg
+│   │       ├── eecs442_0511.png
+│   │       ├── eecs442_0512.jpg
+│   │       ├── eecs442_0512.png
+│   │       ├── eecs442_0513.jpg
+│   │       ├── eecs442_0513.png
+│   │       ├── eecs442_0514.jpg
+│   │       ├── eecs442_0514.png
+│   │       ├── eecs442_0515.jpg
+│   │       ├── eecs442_0515.png
+│   │       ├── eecs442_0516.jpg
+│   │       ├── eecs442_0516.png
+│   │       ├── eecs442_0517.jpg
+│   │       ├── eecs442_0517.png
+│   │       ├── eecs442_0518.jpg
+│   │       ├── eecs442_0518.png
+│   │       ├── eecs442_0519.jpg
+│   │       ├── eecs442_0519.png
+│   │       ├── eecs442_0520.jpg
+│   │       ├── eecs442_0520.png
+│   │       ├── eecs442_0521.jpg
+│   │       ├── eecs442_0521.png
+│   │       ├── eecs442_0522.jpg
+│   │       ├── eecs442_0522.png
+│   │       ├── eecs442_0523.jpg
+│   │       ├── eecs442_0523.png
+│   │       ├── eecs442_0524.jpg
+│   │       ├── eecs442_0524.png
+│   │       ├── eecs442_0525.jpg
+│   │       ├── eecs442_0525.png
+│   │       ├── eecs442_0526.jpg
+│   │       ├── eecs442_0526.png
+│   │       ├── eecs442_0527.jpg
+│   │       ├── eecs442_0527.png
+│   │       ├── eecs442_0528.jpg
+│   │       ├── eecs442_0528.png
+│   │       ├── eecs442_0529.jpg
+│   │       ├── eecs442_0529.png
+│   │       ├── eecs442_0530.jpg
+│   │       ├── eecs442_0530.png
+│   │       ├── eecs442_0531.jpg
+│   │       ├── eecs442_0531.png
+│   │       ├── eecs442_0532.jpg
+│   │       ├── eecs442_0532.png
+│   │       ├── eecs442_0533.jpg
+│   │       ├── eecs442_0533.png
+│   │       ├── eecs442_0534.jpg
+│   │       ├── eecs442_0534.png
+│   │       ├── eecs442_0535.jpg
+│   │       ├── eecs442_0535.png
+│   │       ├── eecs442_0536.jpg
+│   │       ├── eecs442_0536.png
+│   │       ├── eecs442_0537.jpg
+│   │       ├── eecs442_0537.png
+│   │       ├── eecs442_0538.jpg
+│   │       ├── eecs442_0538.png
+│   │       ├── eecs442_0539.jpg
+│   │       ├── eecs442_0539.png
+│   │       ├── eecs442_0540.jpg
+│   │       ├── eecs442_0540.png
+│   │       ├── eecs442_0541.jpg
+│   │       ├── eecs442_0541.png
+│   │       ├── eecs442_0542.jpg
+│   │       ├── eecs442_0542.png
+│   │       ├── eecs442_0543.jpg
+│   │       ├── eecs442_0543.png
+│   │       ├── eecs442_0544.jpg
+│   │       ├── eecs442_0544.png
+│   │       ├── eecs442_0545.jpg
+│   │       ├── eecs442_0545.png
+│   │       ├── eecs442_0546.jpg
+│   │       ├── eecs442_0546.png
+│   │       ├── eecs442_0547.jpg
+│   │       ├── eecs442_0547.png
+│   │       ├── eecs442_0548.jpg
+│   │       ├── eecs442_0548.png
+│   │       ├── eecs442_0549.jpg
+│   │       ├── eecs442_0549.png
+│   │       ├── eecs442_0550.jpg
+│   │       ├── eecs442_0550.png
+│   │       ├── eecs442_0551.jpg
+│   │       ├── eecs442_0551.png
+│   │       ├── eecs442_0552.jpg
+│   │       ├── eecs442_0552.png
+│   │       ├── eecs442_0553.jpg
+│   │       ├── eecs442_0553.png
+│   │       ├── eecs442_0554.jpg
+│   │       ├── eecs442_0554.png
+│   │       ├── eecs442_0555.jpg
+│   │       ├── eecs442_0555.png
+│   │       ├── eecs442_0556.jpg
+│   │       ├── eecs442_0556.png
+│   │       ├── eecs442_0557.jpg
+│   │       ├── eecs442_0557.png
+│   │       ├── eecs442_0558.jpg
+│   │       ├── eecs442_0558.png
+│   │       ├── eecs442_0559.jpg
+│   │       ├── eecs442_0559.png
+│   │       ├── eecs442_0560.jpg
+│   │       ├── eecs442_0560.png
+│   │       ├── eecs442_0561.jpg
+│   │       ├── eecs442_0561.png
+│   │       ├── eecs442_0562.jpg
+│   │       ├── eecs442_0562.png
+│   │       ├── eecs442_0563.jpg
+│   │       ├── eecs442_0563.png
+│   │       ├── eecs442_0564.jpg
+│   │       ├── eecs442_0564.png
+│   │       ├── eecs442_0565.jpg
+│   │       ├── eecs442_0565.png
+│   │       ├── eecs442_0566.jpg
+│   │       ├── eecs442_0566.png
+│   │       ├── eecs442_0567.jpg
+│   │       ├── eecs442_0567.png
+│   │       ├── eecs442_0568.jpg
+│   │       ├── eecs442_0568.png
+│   │       ├── eecs442_0569.jpg
+│   │       ├── eecs442_0569.png
+│   │       ├── eecs442_0570.jpg
+│   │       ├── eecs442_0570.png
+│   │       ├── eecs442_0571.jpg
+│   │       ├── eecs442_0571.png
+│   │       ├── eecs442_0572.jpg
+│   │       ├── eecs442_0572.png
+│   │       ├── eecs442_0573.jpg
+│   │       ├── eecs442_0573.png
+│   │       ├── eecs442_0574.jpg
+│   │       ├── eecs442_0574.png
+│   │       ├── eecs442_0575.jpg
+│   │       ├── eecs442_0575.png
+│   │       ├── eecs442_0576.jpg
+│   │       ├── eecs442_0576.png
+│   │       ├── eecs442_0577.jpg
+│   │       ├── eecs442_0577.png
+│   │       ├── eecs442_0578.jpg
+│   │       ├── eecs442_0578.png
+│   │       ├── eecs442_0579.jpg
+│   │       ├── eecs442_0579.png
+│   │       ├── eecs442_0580.jpg
+│   │       ├── eecs442_0580.png
+│   │       ├── eecs442_0581.jpg
+│   │       ├── eecs442_0581.png
+│   │       ├── eecs442_0582.jpg
+│   │       ├── eecs442_0582.png
+│   │       ├── eecs442_0583.jpg
+│   │       ├── eecs442_0583.png
+│   │       ├── eecs442_0584.jpg
+│   │       ├── eecs442_0584.png
+│   │       ├── eecs442_0585.jpg
+│   │       ├── eecs442_0585.png
+│   │       ├── eecs442_0586.jpg
+│   │       ├── eecs442_0586.png
+│   │       ├── eecs442_0587.jpg
+│   │       ├── eecs442_0587.png
+│   │       ├── eecs442_0588.jpg
+│   │       ├── eecs442_0588.png
+│   │       ├── eecs442_0589.jpg
+│   │       ├── eecs442_0589.png
+│   │       ├── eecs442_0590.jpg
+│   │       ├── eecs442_0590.png
+│   │       ├── eecs442_0591.jpg
+│   │       ├── eecs442_0591.png
+│   │       ├── eecs442_0592.jpg
+│   │       ├── eecs442_0592.png
+│   │       ├── eecs442_0593.jpg
+│   │       ├── eecs442_0593.png
+│   │       ├── eecs442_0594.jpg
+│   │       ├── eecs442_0594.png
+│   │       ├── eecs442_0595.jpg
+│   │       ├── eecs442_0595.png
+│   │       ├── eecs442_0596.jpg
+│   │       ├── eecs442_0596.png
+│   │       ├── eecs442_0597.jpg
+│   │       ├── eecs442_0597.png
+│   │       ├── eecs442_0598.jpg
+│   │       ├── eecs442_0598.png
+│   │       ├── eecs442_0599.jpg
+│   │       ├── eecs442_0599.png
+│   │       ├── eecs442_0600.jpg
+│   │       ├── eecs442_0600.png
+│   │       ├── eecs442_0601.jpg
+│   │       ├── eecs442_0601.png
+│   │       ├── eecs442_0602.jpg
+│   │       ├── eecs442_0602.png
+│   │       ├── eecs442_0603.jpg
+│   │       ├── eecs442_0603.png
+│   │       ├── eecs442_0604.jpg
+│   │       ├── eecs442_0604.png
+│   │       ├── eecs442_0605.jpg
+│   │       ├── eecs442_0605.png
+│   │       ├── eecs442_0606.jpg
+│   │       ├── eecs442_0606.png
+│   │       ├── eecs442_0607.jpg
+│   │       ├── eecs442_0607.png
+│   │       ├── eecs442_0608.jpg
+│   │       ├── eecs442_0608.png
+│   │       ├── eecs442_0609.jpg
+│   │       ├── eecs442_0609.png
+│   │       ├── eecs442_0610.jpg
+│   │       ├── eecs442_0610.png
+│   │       ├── eecs442_0611.jpg
+│   │       ├── eecs442_0611.png
+│   │       ├── eecs442_0612.jpg
+│   │       ├── eecs442_0612.png
+│   │       ├── eecs442_0613.jpg
+│   │       ├── eecs442_0613.png
+│   │       ├── eecs442_0614.jpg
+│   │       ├── eecs442_0614.png
+│   │       ├── eecs442_0615.jpg
+│   │       ├── eecs442_0615.png
+│   │       ├── eecs442_0616.jpg
+│   │       ├── eecs442_0616.png
+│   │       ├── eecs442_0617.jpg
+│   │       ├── eecs442_0617.png
+│   │       ├── eecs442_0618.jpg
+│   │       ├── eecs442_0618.png
+│   │       ├── eecs442_0619.jpg
+│   │       ├── eecs442_0619.png
+│   │       ├── eecs442_0620.jpg
+│   │       ├── eecs442_0620.png
+│   │       ├── eecs442_0621.jpg
+│   │       ├── eecs442_0621.png
+│   │       ├── eecs442_0622.jpg
+│   │       ├── eecs442_0622.png
+│   │       ├── eecs442_0623.jpg
+│   │       ├── eecs442_0623.png
+│   │       ├── eecs442_0624.jpg
+│   │       ├── eecs442_0624.png
+│   │       ├── eecs442_0625.jpg
+│   │       ├── eecs442_0625.png
+│   │       ├── eecs442_0626.jpg
+│   │       ├── eecs442_0626.png
+│   │       ├── eecs442_0627.jpg
+│   │       ├── eecs442_0627.png
+│   │       ├── eecs442_0628.jpg
+│   │       ├── eecs442_0628.png
+│   │       ├── eecs442_0629.jpg
+│   │       ├── eecs442_0629.png
+│   │       ├── eecs442_0630.jpg
+│   │       ├── eecs442_0630.png
+│   │       ├── eecs442_0631.jpg
+│   │       ├── eecs442_0631.png
+│   │       ├── eecs442_0632.jpg
+│   │       ├── eecs442_0632.png
+│   │       ├── eecs442_0633.jpg
+│   │       ├── eecs442_0633.png
+│   │       ├── eecs442_0634.jpg
+│   │       ├── eecs442_0634.png
+│   │       ├── eecs442_0635.jpg
+│   │       ├── eecs442_0635.png
+│   │       ├── eecs442_0636.jpg
+│   │       ├── eecs442_0636.png
+│   │       ├── eecs442_0637.jpg
+│   │       ├── eecs442_0637.png
+│   │       ├── eecs442_0638.jpg
+│   │       ├── eecs442_0638.png
+│   │       ├── eecs442_0639.jpg
+│   │       ├── eecs442_0639.png
+│   │       ├── eecs442_0640.jpg
+│   │       ├── eecs442_0640.png
+│   │       ├── eecs442_0641.jpg
+│   │       ├── eecs442_0641.png
+│   │       ├── eecs442_0642.jpg
+│   │       ├── eecs442_0642.png
+│   │       ├── eecs442_0643.jpg
+│   │       ├── eecs442_0643.png
+│   │       ├── eecs442_0644.jpg
+│   │       ├── eecs442_0644.png
+│   │       ├── eecs442_0645.jpg
+│   │       ├── eecs442_0645.png
+│   │       ├── eecs442_0646.jpg
+│   │       ├── eecs442_0646.png
+│   │       ├── eecs442_0647.jpg
+│   │       ├── eecs442_0647.png
+│   │       ├── eecs442_0648.jpg
+│   │       ├── eecs442_0648.png
+│   │       ├── eecs442_0649.jpg
+│   │       ├── eecs442_0649.png
+│   │       ├── eecs442_0650.jpg
+│   │       ├── eecs442_0650.png
+│   │       ├── eecs442_0651.jpg
+│   │       ├── eecs442_0651.png
+│   │       ├── eecs442_0652.jpg
+│   │       ├── eecs442_0652.png
+│   │       ├── eecs442_0653.jpg
+│   │       ├── eecs442_0653.png
+│   │       ├── eecs442_0654.jpg
+│   │       ├── eecs442_0654.png
+│   │       ├── eecs442_0655.jpg
+│   │       ├── eecs442_0655.png
+│   │       ├── eecs442_0656.jpg
+│   │       ├── eecs442_0656.png
+│   │       ├── eecs442_0657.jpg
+│   │       ├── eecs442_0657.png
+│   │       ├── eecs442_0658.jpg
+│   │       ├── eecs442_0658.png
+│   │       ├── eecs442_0659.jpg
+│   │       ├── eecs442_0659.png
+│   │       ├── eecs442_0660.jpg
+│   │       ├── eecs442_0660.png
+│   │       ├── eecs442_0661.jpg
+│   │       ├── eecs442_0661.png
+│   │       ├── eecs442_0662.jpg
+│   │       ├── eecs442_0662.png
+│   │       ├── eecs442_0663.jpg
+│   │       ├── eecs442_0663.png
+│   │       ├── eecs442_0664.jpg
+│   │       ├── eecs442_0664.png
+│   │       ├── eecs442_0665.jpg
+│   │       ├── eecs442_0665.png
+│   │       ├── eecs442_0666.jpg
+│   │       ├── eecs442_0666.png
+│   │       ├── eecs442_0667.jpg
+│   │       ├── eecs442_0667.png
+│   │       ├── eecs442_0668.jpg
+│   │       ├── eecs442_0668.png
+│   │       ├── eecs442_0669.jpg
+│   │       ├── eecs442_0669.png
+│   │       ├── eecs442_0670.jpg
+│   │       ├── eecs442_0670.png
+│   │       ├── eecs442_0671.jpg
+│   │       ├── eecs442_0671.png
+│   │       ├── eecs442_0672.jpg
+│   │       ├── eecs442_0672.png
+│   │       ├── eecs442_0673.jpg
+│   │       ├── eecs442_0673.png
+│   │       ├── eecs442_0674.jpg
+│   │       ├── eecs442_0674.png
+│   │       ├── eecs442_0675.jpg
+│   │       ├── eecs442_0675.png
+│   │       ├── eecs442_0676.jpg
+│   │       ├── eecs442_0676.png
+│   │       ├── eecs442_0677.jpg
+│   │       ├── eecs442_0677.png
+│   │       ├── eecs442_0678.jpg
+│   │       ├── eecs442_0678.png
+│   │       ├── eecs442_0679.jpg
+│   │       ├── eecs442_0679.png
+│   │       ├── eecs442_0680.jpg
+│   │       ├── eecs442_0680.png
+│   │       ├── eecs442_0681.jpg
+│   │       ├── eecs442_0681.png
+│   │       ├── eecs442_0682.jpg
+│   │       ├── eecs442_0682.png
+│   │       ├── eecs442_0683.jpg
+│   │       ├── eecs442_0683.png
+│   │       ├── eecs442_0684.jpg
+│   │       ├── eecs442_0684.png
+│   │       ├── eecs442_0685.jpg
+│   │       ├── eecs442_0685.png
+│   │       ├── eecs442_0686.jpg
+│   │       ├── eecs442_0686.png
+│   │       ├── eecs442_0687.jpg
+│   │       ├── eecs442_0687.png
+│   │       ├── eecs442_0688.jpg
+│   │       ├── eecs442_0688.png
+│   │       ├── eecs442_0689.jpg
+│   │       ├── eecs442_0689.png
+│   │       ├── eecs442_0690.jpg
+│   │       ├── eecs442_0690.png
+│   │       ├── eecs442_0691.jpg
+│   │       ├── eecs442_0691.png
+│   │       ├── eecs442_0692.jpg
+│   │       ├── eecs442_0692.png
+│   │       ├── eecs442_0693.jpg
+│   │       ├── eecs442_0693.png
+│   │       ├── eecs442_0694.jpg
+│   │       ├── eecs442_0694.png
+│   │       ├── eecs442_0695.jpg
+│   │       ├── eecs442_0695.png
+│   │       ├── eecs442_0696.jpg
+│   │       ├── eecs442_0696.png
+│   │       ├── eecs442_0697.jpg
+│   │       ├── eecs442_0697.png
+│   │       ├── eecs442_0698.jpg
+│   │       ├── eecs442_0698.png
+│   │       ├── eecs442_0699.jpg
+│   │       ├── eecs442_0699.png
+│   │       ├── eecs442_0700.jpg
+│   │       ├── eecs442_0700.png
+│   │       ├── eecs442_0701.jpg
+│   │       ├── eecs442_0701.png
+│   │       ├── eecs442_0702.jpg
+│   │       ├── eecs442_0702.png
+│   │       ├── eecs442_0703.jpg
+│   │       ├── eecs442_0703.png
+│   │       ├── eecs442_0704.jpg
+│   │       ├── eecs442_0704.png
+│   │       ├── eecs442_0705.jpg
+│   │       ├── eecs442_0705.png
+│   │       ├── eecs442_0706.jpg
+│   │       ├── eecs442_0706.png
+│   │       ├── eecs442_0707.jpg
+│   │       ├── eecs442_0707.png
+│   │       ├── eecs442_0708.jpg
+│   │       ├── eecs442_0708.png
+│   │       ├── eecs442_0709.jpg
+│   │       ├── eecs442_0709.png
+│   │       ├── eecs442_0710.jpg
+│   │       ├── eecs442_0710.png
+│   │       ├── eecs442_0711.jpg
+│   │       ├── eecs442_0711.png
+│   │       ├── eecs442_0712.jpg
+│   │       ├── eecs442_0712.png
+│   │       ├── eecs442_0713.jpg
+│   │       ├── eecs442_0713.png
+│   │       ├── eecs442_0714.jpg
+│   │       ├── eecs442_0714.png
+│   │       ├── eecs442_0715.jpg
+│   │       ├── eecs442_0715.png
+│   │       ├── eecs442_0716.jpg
+│   │       ├── eecs442_0716.png
+│   │       ├── eecs442_0717.jpg
+│   │       ├── eecs442_0717.png
+│   │       ├── eecs442_0718.jpg
+│   │       ├── eecs442_0718.png
+│   │       ├── eecs442_0719.jpg
+│   │       ├── eecs442_0719.png
+│   │       ├── eecs442_0720.jpg
+│   │       ├── eecs442_0720.png
+│   │       ├── eecs442_0721.jpg
+│   │       ├── eecs442_0721.png
+│   │       ├── eecs442_0722.jpg
+│   │       ├── eecs442_0722.png
+│   │       ├── eecs442_0723.jpg
+│   │       ├── eecs442_0723.png
+│   │       ├── eecs442_0724.jpg
+│   │       ├── eecs442_0724.png
+│   │       ├── eecs442_0725.jpg
+│   │       ├── eecs442_0725.png
+│   │       ├── eecs442_0726.jpg
+│   │       ├── eecs442_0726.png
+│   │       ├── eecs442_0727.jpg
+│   │       ├── eecs442_0727.png
+│   │       ├── eecs442_0728.jpg
+│   │       ├── eecs442_0728.png
+│   │       ├── eecs442_0729.jpg
+│   │       ├── eecs442_0729.png
+│   │       ├── eecs442_0730.jpg
+│   │       ├── eecs442_0730.png
+│   │       ├── eecs442_0731.jpg
+│   │       ├── eecs442_0731.png
+│   │       ├── eecs442_0732.jpg
+│   │       ├── eecs442_0732.png
+│   │       ├── eecs442_0733.jpg
+│   │       ├── eecs442_0733.png
+│   │       ├── eecs442_0734.jpg
+│   │       ├── eecs442_0734.png
+│   │       ├── eecs442_0735.jpg
+│   │       ├── eecs442_0735.png
+│   │       ├── eecs442_0736.jpg
+│   │       ├── eecs442_0736.png
+│   │       ├── eecs442_0737.jpg
+│   │       ├── eecs442_0737.png
+│   │       ├── eecs442_0738.jpg
+│   │       ├── eecs442_0738.png
+│   │       ├── eecs442_0739.jpg
+│   │       ├── eecs442_0739.png
+│   │       ├── eecs442_0740.jpg
+│   │       ├── eecs442_0740.png
+│   │       ├── eecs442_0741.jpg
+│   │       ├── eecs442_0741.png
+│   │       ├── eecs442_0742.jpg
+│   │       ├── eecs442_0742.png
+│   │       ├── eecs442_0743.jpg
+│   │       ├── eecs442_0743.png
+│   │       ├── eecs442_0744.jpg
+│   │       ├── eecs442_0744.png
+│   │       ├── eecs442_0745.jpg
+│   │       ├── eecs442_0745.png
+│   │       ├── eecs442_0746.jpg
+│   │       ├── eecs442_0746.png
+│   │       ├── eecs442_0747.jpg
+│   │       ├── eecs442_0747.png
+│   │       ├── eecs442_0748.jpg
+│   │       ├── eecs442_0748.png
+│   │       ├── eecs442_0749.jpg
+│   │       ├── eecs442_0749.png
+│   │       ├── eecs442_0750.jpg
+│   │       ├── eecs442_0750.png
+│   │       ├── eecs442_0751.jpg
+│   │       ├── eecs442_0751.png
+│   │       ├── eecs442_0752.jpg
+│   │       ├── eecs442_0752.png
+│   │       ├── eecs442_0753.jpg
+│   │       ├── eecs442_0753.png
+│   │       ├── eecs442_0754.jpg
+│   │       ├── eecs442_0754.png
+│   │       ├── eecs442_0755.jpg
+│   │       ├── eecs442_0755.png
+│   │       ├── eecs442_0756.jpg
+│   │       ├── eecs442_0756.png
+│   │       ├── eecs442_0757.jpg
+│   │       ├── eecs442_0757.png
+│   │       ├── eecs442_0758.jpg
+│   │       ├── eecs442_0758.png
+│   │       ├── eecs442_0759.jpg
+│   │       ├── eecs442_0759.png
+│   │       ├── eecs442_0760.jpg
+│   │       ├── eecs442_0760.png
+│   │       ├── eecs442_0761.jpg
+│   │       ├── eecs442_0761.png
+│   │       ├── eecs442_0762.jpg
+│   │       ├── eecs442_0762.png
+│   │       ├── eecs442_0763.jpg
+│   │       ├── eecs442_0763.png
+│   │       ├── eecs442_0764.jpg
+│   │       ├── eecs442_0764.png
+│   │       ├── eecs442_0765.jpg
+│   │       ├── eecs442_0765.png
+│   │       ├── eecs442_0766.jpg
+│   │       ├── eecs442_0766.png
+│   │       ├── eecs442_0767.jpg
+│   │       ├── eecs442_0767.png
+│   │       ├── eecs442_0768.jpg
+│   │       ├── eecs442_0768.png
+│   │       ├── eecs442_0769.jpg
+│   │       ├── eecs442_0769.png
+│   │       ├── eecs442_0770.jpg
+│   │       ├── eecs442_0770.png
+│   │       ├── eecs442_0771.jpg
+│   │       ├── eecs442_0771.png
+│   │       ├── eecs442_0772.jpg
+│   │       ├── eecs442_0772.png
+│   │       ├── eecs442_0773.jpg
+│   │       ├── eecs442_0773.png
+│   │       ├── eecs442_0774.jpg
+│   │       ├── eecs442_0774.png
+│   │       ├── eecs442_0775.jpg
+│   │       ├── eecs442_0775.png
+│   │       ├── eecs442_0776.jpg
+│   │       ├── eecs442_0776.png
+│   │       ├── eecs442_0777.jpg
+│   │       ├── eecs442_0777.png
+│   │       ├── eecs442_0778.jpg
+│   │       ├── eecs442_0778.png
+│   │       ├── eecs442_0779.jpg
+│   │       ├── eecs442_0779.png
+│   │       ├── eecs442_0780.jpg
+│   │       ├── eecs442_0780.png
+│   │       ├── eecs442_0781.jpg
+│   │       ├── eecs442_0781.png
+│   │       ├── eecs442_0782.jpg
+│   │       ├── eecs442_0782.png
+│   │       ├── eecs442_0783.jpg
+│   │       ├── eecs442_0783.png
+│   │       ├── eecs442_0784.jpg
+│   │       ├── eecs442_0784.png
+│   │       ├── eecs442_0785.jpg
+│   │       ├── eecs442_0785.png
+│   │       ├── eecs442_0786.jpg
+│   │       ├── eecs442_0786.png
+│   │       ├── eecs442_0787.jpg
+│   │       ├── eecs442_0787.png
+│   │       ├── eecs442_0788.jpg
+│   │       ├── eecs442_0788.png
+│   │       ├── eecs442_0789.jpg
+│   │       ├── eecs442_0789.png
+│   │       ├── eecs442_0790.jpg
+│   │       ├── eecs442_0790.png
+│   │       ├── eecs442_0791.jpg
+│   │       ├── eecs442_0791.png
+│   │       ├── eecs442_0792.jpg
+│   │       ├── eecs442_0792.png
+│   │       ├── eecs442_0793.jpg
+│   │       ├── eecs442_0793.png
+│   │       ├── eecs442_0794.jpg
+│   │       ├── eecs442_0794.png
+│   │       ├── eecs442_0795.jpg
+│   │       ├── eecs442_0795.png
+│   │       ├── eecs442_0796.jpg
+│   │       ├── eecs442_0796.png
+│   │       ├── eecs442_0797.jpg
+│   │       ├── eecs442_0797.png
+│   │       ├── eecs442_0798.jpg
+│   │       ├── eecs442_0798.png
+│   │       ├── eecs442_0799.jpg
+│   │       ├── eecs442_0799.png
+│   │       ├── eecs442_0800.jpg
+│   │       ├── eecs442_0800.png
+│   │       ├── eecs442_0801.jpg
+│   │       ├── eecs442_0801.png
+│   │       ├── eecs442_0802.jpg
+│   │       ├── eecs442_0802.png
+│   │       ├── eecs442_0803.jpg
+│   │       ├── eecs442_0803.png
+│   │       ├── eecs442_0804.jpg
+│   │       ├── eecs442_0804.png
+│   │       ├── eecs442_0805.jpg
+│   │       ├── eecs442_0805.png
+│   │       ├── eecs442_0806.jpg
+│   │       ├── eecs442_0806.png
+│   │       ├── eecs442_0807.jpg
+│   │       ├── eecs442_0807.png
+│   │       ├── eecs442_0808.jpg
+│   │       ├── eecs442_0808.png
+│   │       ├── eecs442_0809.jpg
+│   │       ├── eecs442_0809.png
+│   │       ├── eecs442_0810.jpg
+│   │       ├── eecs442_0810.png
+│   │       ├── eecs442_0811.jpg
+│   │       ├── eecs442_0811.png
+│   │       ├── eecs442_0812.jpg
+│   │       ├── eecs442_0812.png
+│   │       ├── eecs442_0813.jpg
+│   │       ├── eecs442_0813.png
+│   │       ├── eecs442_0814.jpg
+│   │       ├── eecs442_0814.png
+│   │       ├── eecs442_0815.jpg
+│   │       ├── eecs442_0815.png
+│   │       ├── eecs442_0816.jpg
+│   │       ├── eecs442_0816.png
+│   │       ├── eecs442_0817.jpg
+│   │       ├── eecs442_0817.png
+│   │       ├── eecs442_0818.jpg
+│   │       ├── eecs442_0818.png
+│   │       ├── eecs442_0819.jpg
+│   │       ├── eecs442_0819.png
+│   │       ├── eecs442_0820.jpg
+│   │       ├── eecs442_0820.png
+│   │       ├── eecs442_0821.jpg
+│   │       ├── eecs442_0821.png
+│   │       ├── eecs442_0822.jpg
+│   │       ├── eecs442_0822.png
+│   │       ├── eecs442_0823.jpg
+│   │       ├── eecs442_0823.png
+│   │       ├── eecs442_0824.jpg
+│   │       ├── eecs442_0824.png
+│   │       ├── eecs442_0825.jpg
+│   │       ├── eecs442_0825.png
+│   │       ├── eecs442_0826.jpg
+│   │       ├── eecs442_0826.png
+│   │       ├── eecs442_0827.jpg
+│   │       ├── eecs442_0827.png
+│   │       ├── eecs442_0828.jpg
+│   │       ├── eecs442_0828.png
+│   │       ├── eecs442_0829.jpg
+│   │       ├── eecs442_0829.png
+│   │       ├── eecs442_0830.jpg
+│   │       ├── eecs442_0830.png
+│   │       ├── eecs442_0831.jpg
+│   │       ├── eecs442_0831.png
+│   │       ├── eecs442_0832.jpg
+│   │       ├── eecs442_0832.png
+│   │       ├── eecs442_0833.jpg
+│   │       ├── eecs442_0833.png
+│   │       ├── eecs442_0834.jpg
+│   │       ├── eecs442_0834.png
+│   │       ├── eecs442_0835.jpg
+│   │       ├── eecs442_0835.png
+│   │       ├── eecs442_0836.jpg
+│   │       ├── eecs442_0836.png
+│   │       ├── eecs442_0837.jpg
+│   │       ├── eecs442_0837.png
+│   │       ├── eecs442_0838.jpg
+│   │       ├── eecs442_0838.png
+│   │       ├── eecs442_0839.jpg
+│   │       ├── eecs442_0839.png
+│   │       ├── eecs442_0840.jpg
+│   │       ├── eecs442_0840.png
+│   │       ├── eecs442_0841.jpg
+│   │       ├── eecs442_0841.png
+│   │       ├── eecs442_0842.jpg
+│   │       ├── eecs442_0842.png
+│   │       ├── eecs442_0843.jpg
+│   │       ├── eecs442_0843.png
+│   │       ├── eecs442_0844.jpg
+│   │       ├── eecs442_0844.png
+│   │       ├── eecs442_0845.jpg
+│   │       ├── eecs442_0845.png
+│   │       ├── eecs442_0846.jpg
+│   │       ├── eecs442_0846.png
+│   │       ├── eecs442_0847.jpg
+│   │       ├── eecs442_0847.png
+│   │       ├── eecs442_0848.jpg
+│   │       ├── eecs442_0848.png
+│   │       ├── eecs442_0849.jpg
+│   │       ├── eecs442_0849.png
+│   │       ├── eecs442_0850.jpg
+│   │       ├── eecs442_0850.png
+│   │       ├── eecs442_0851.jpg
+│   │       ├── eecs442_0851.png
+│   │       ├── eecs442_0852.jpg
+│   │       ├── eecs442_0852.png
+│   │       ├── eecs442_0853.jpg
+│   │       ├── eecs442_0853.png
+│   │       ├── eecs442_0854.jpg
+│   │       ├── eecs442_0854.png
+│   │       ├── eecs442_0855.jpg
+│   │       ├── eecs442_0855.png
+│   │       ├── eecs442_0856.jpg
+│   │       ├── eecs442_0856.png
+│   │       ├── eecs442_0857.jpg
+│   │       ├── eecs442_0857.png
+│   │       ├── eecs442_0858.jpg
+│   │       ├── eecs442_0858.png
+│   │       ├── eecs442_0859.jpg
+│   │       ├── eecs442_0859.png
+│   │       ├── eecs442_0860.jpg
+│   │       ├── eecs442_0860.png
+│   │       ├── eecs442_0861.jpg
+│   │       ├── eecs442_0861.png
+│   │       ├── eecs442_0862.jpg
+│   │       ├── eecs442_0862.png
+│   │       ├── eecs442_0863.jpg
+│   │       ├── eecs442_0863.png
+│   │       ├── eecs442_0864.jpg
+│   │       ├── eecs442_0864.png
+│   │       ├── eecs442_0865.jpg
+│   │       ├── eecs442_0865.png
+│   │       ├── eecs442_0866.jpg
+│   │       ├── eecs442_0866.png
+│   │       ├── eecs442_0867.jpg
+│   │       ├── eecs442_0867.png
+│   │       ├── eecs442_0868.jpg
+│   │       ├── eecs442_0868.png
+│   │       ├── eecs442_0869.jpg
+│   │       ├── eecs442_0869.png
+│   │       ├── eecs442_0870.jpg
+│   │       ├── eecs442_0870.png
+│   │       ├── eecs442_0871.jpg
+│   │       ├── eecs442_0871.png
+│   │       ├── eecs442_0872.jpg
+│   │       ├── eecs442_0872.png
+│   │       ├── eecs442_0873.jpg
+│   │       ├── eecs442_0873.png
+│   │       ├── eecs442_0874.jpg
+│   │       ├── eecs442_0874.png
+│   │       ├── eecs442_0875.jpg
+│   │       ├── eecs442_0875.png
+│   │       ├── eecs442_0876.jpg
+│   │       ├── eecs442_0876.png
+│   │       ├── eecs442_0877.jpg
+│   │       ├── eecs442_0877.png
+│   │       ├── eecs442_0878.jpg
+│   │       ├── eecs442_0878.png
+│   │       ├── eecs442_0879.jpg
+│   │       ├── eecs442_0879.png
+│   │       ├── eecs442_0880.jpg
+│   │       ├── eecs442_0880.png
+│   │       ├── eecs442_0881.jpg
+│   │       ├── eecs442_0881.png
+│   │       ├── eecs442_0882.jpg
+│   │       ├── eecs442_0882.png
+│   │       ├── eecs442_0883.jpg
+│   │       ├── eecs442_0883.png
+│   │       ├── eecs442_0884.jpg
+│   │       ├── eecs442_0884.png
+│   │       ├── eecs442_0885.jpg
+│   │       ├── eecs442_0885.png
+│   │       ├── eecs442_0886.jpg
+│   │       ├── eecs442_0886.png
+│   │       ├── eecs442_0887.jpg
+│   │       ├── eecs442_0887.png
+│   │       ├── eecs442_0888.jpg
+│   │       ├── eecs442_0888.png
+│   │       ├── eecs442_0889.jpg
+│   │       ├── eecs442_0889.png
+│   │       ├── eecs442_0890.jpg
+│   │       ├── eecs442_0890.png
+│   │       ├── eecs442_0891.jpg
+│   │       ├── eecs442_0891.png
+│   │       ├── eecs442_0892.jpg
+│   │       ├── eecs442_0892.png
+│   │       ├── eecs442_0893.jpg
+│   │       ├── eecs442_0893.png
+│   │       ├── eecs442_0894.jpg
+│   │       ├── eecs442_0894.png
+│   │       ├── eecs442_0895.jpg
+│   │       ├── eecs442_0895.png
+│   │       ├── eecs442_0896.jpg
+│   │       ├── eecs442_0896.png
+│   │       ├── eecs442_0897.jpg
+│   │       ├── eecs442_0897.png
+│   │       ├── eecs442_0898.jpg
+│   │       ├── eecs442_0898.png
+│   │       ├── eecs442_0899.jpg
+│   │       ├── eecs442_0899.png
+│   │       ├── eecs442_0900.jpg
+│   │       ├── eecs442_0900.png
+│   │       ├── eecs442_0901.jpg
+│   │       ├── eecs442_0901.png
+│   │       ├── eecs442_0902.jpg
+│   │       ├── eecs442_0902.png
+│   │       ├── eecs442_0903.jpg
+│   │       ├── eecs442_0903.png
+│   │       ├── eecs442_0904.jpg
+│   │       ├── eecs442_0904.png
+│   │       ├── eecs442_0905.jpg
+│   │       └── eecs442_0905.png
+│   ├── facades.zip
+│   ├── girl.jpeg
+│   ├── hw5.pdf
+│   ├── imagenet_class_index.json
+│   ├── imagenet_class_index.json.1
+│   ├── nerdy_cat.jpeg
+│   ├── part1.ipynb
+│   ├── part2.ipynb
+│   ├── part3.ipynb
+│   ├── ryoko.JPG
+│   ├── tiger.jpg
+│   └── tst.py
+├── hw6
+│   ├── __pycache__
+│   │   ├── utils.cpython-310.pyc
+│   │   └── utils.cpython-39.pyc
+│   ├── hw6.pdf
+│   ├── results
+│   ├── task1
+│   │   ├── pts2d.txt
+│   │   └── pts3d.txt
+│   ├── task1.py
+│   ├── task23
+│   │   ├── inwards
+│   │   │   ├── data.npz
+│   │   │   ├── im1.png
+│   │   │   └── im2.png
+│   │   ├── reallyInwards
+│   │   │   ├── data.npz
+│   │   │   ├── im1.png
+│   │   │   └── im2.png
+│   │   ├── temple
+│   │   │   ├── data.npz
+│   │   │   ├── im1.png
+│   │   │   └── im2.png
+│   │   ├── xtrans
+│   │   │   ├── data.npz
+│   │   │   ├── im1.png
+│   │   │   └── im2.png
+│   │   ├── xyztrans
+│   │   │   ├── data.npz
+│   │   │   ├── im1.png
+│   │   │   └── im2.png
+│   │   ├── ytrans
+│   │   │   ├── data.npz
+│   │   │   ├── im1.png
+│   │   │   └── im2.png
+│   │   ├── zrtrans
+│   │   │   ├── data.npz
+│   │   │   ├── im1.png
+│   │   │   └── im2.png
+│   │   ├── zrtransrot
+│   │   │   ├── data.npz
+│   │   │   ├── im1.png
+│   │   │   └── im2.png
+│   │   └── ztrans
+│   │       ├── data.npz
+│   │       ├── im1.png
+│   │       └── im2.png
+│   ├── task23.py
+│   └── utils.py
+└── original-file-structure
+
+80 directories, 2684 files

@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+**/*MACOSX/*
+**/*.DS_Store
+
+*.npz
+*.pyc
+*.npy
+*.zip
+
+# EECS442
+EECS442/**/*.png
+EECS442/**/*.gif
+EECS442/**/*.jpg
+EECS442/**/*.jpeg
+EECS442/**/*.gz
+EECS442/**/*.pkl
+EECS442/hw4/neuralnet/cifar-10-batches-py/*
+EECS442/hw5/FashionMNIST/*
